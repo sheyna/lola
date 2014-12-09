@@ -1,0 +1,98 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain) */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  src: url('http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600'); }
+
+body {
+  background-color: #f8f0e1; }
+
+.logo {
+  width: 4em; }
+
+.logoText {
+  color: #5d8780;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 6em;
+  display: inline-block;
+  margin: 0 0 0 0.2em; }
+
+nav {
+  display: inline-block;
+  margin-top: 1em; }
+  nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 1.6em 0 1.6em; }
+  nav a {
+    color: #5d8780;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    text-decoration: none; }
+
+.main-content {
+  max-width: 900px;
+  margin: 2em auto 0 auto;
+  padding: 0 6px 0 6px; }
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  max-width: 897px;
+  margin: 1.5em auto 1.5em auto;
+  clear: both; }
+
+.panel1 {
+  background-color: #5d8780;
+  flex-shrink: 1;
+  flex-basis: 317px; }
+
+.panel2 {
+  background-color: #5d8780;
+  flex-shrink: 1;
+  flex-basis: 333px; }
+
+.panel3 {
+  background-color: #5d8780;
+  flex-shrink: 1;
+  flex-basis: 247px; }
+
+.panelImage {
+  margin: 0 0 0 0;
+  max-width: 100%; }
+  .panelImage:hover {
+    opacity: 0.2; }
+
+p {
+  font-family: 'Open Sans', sans-serif; }

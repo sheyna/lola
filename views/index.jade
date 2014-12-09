@@ -1,0 +1,26 @@
+extends layout
+
+block content
+
+  .main-content
+    header
+      img.logo(src='images/lola.svg', alt='Lola Logo')
+      h1.logoText=title
+      nav
+        h2(hidden='') Site Navigation
+        ul
+          li
+            a(href='shop') shop
+          li
+            a(href='#') specials
+          li
+            a(href='#') about
+    .hero
+      .panel3
+        img.panelImage(src='images/lola3.jpg', alt='Lola')
+      .panel2
+        img.panelImage(src='images/lola2.jpg', alt='Lola')
+      .panel1
+        img.panelImage(src='images/lola1.jpg', alt='Lola')
+
+    p Welcome to #{title} this is a cool page.
