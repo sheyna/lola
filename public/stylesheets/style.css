@@ -37,6 +37,9 @@ table {
 body {
   background-color: #f8f0e1; }
 
+p {
+  font-family: 'Open Sans', sans-serif; }
+
 .logo {
   width: 4em; }
 
@@ -94,5 +97,24 @@ nav {
   .panelImage:hover {
     opacity: 0.2; }
 
-p {
-  font-family: 'Open Sans', sans-serif; }
+.shop-main {
+  display: block;
+  width: 40em;
+  margin: 1.5em auto; }
+
+.shop-main--images {
+  display: block;
+  width: 90%;
+  margin: 0 5%;
+  overflow: hidden; }
+
+.clothing {
+  width: 28.5%;
+  margin: 2%;
+  border: 0.2em solid #5d8780; }
+
+.clothing--float-left {
+  float: left; }
+
+.clothing--float-right {
+  float: right; }
