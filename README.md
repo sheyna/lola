@@ -1,4 +1,9 @@
-#Lola
-###A project for Code Fellows B25 by Sheyna Watkins and Marissa Felitto
+#Marissa and Sheyna 
+## Build Node Project from Scratch
+### Week 7
+#### To Install After Cloning from Repo:
+1. Run `npm install` in terminal
+2. Run `npm start` in terminal
+3. Run localhost:3000 in broswer
 
-This project was created using Express and it uses free images from [Morguefile.com](http://www.morguefile.com/).
+We created a Shopping Application in node.js using sass and jade which was then deployed by using heroku
