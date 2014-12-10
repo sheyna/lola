@@ -3,6 +3,21 @@ extends layout
 block content
 
   .main-content
-    img.logo(src='images/lola.svg', alt='Lola Logo')
-    h1.logoText=title
-    p Let's get shopping
+    header
+      a(href='/')
+        img.logo(src='images/lola.svg', alt='Lola Logo')
+        h1.logoText=title
+      nav
+        h2(hidden='') Site Navigation
+        ul
+          li
+            a(href='shop') shop
+          li
+            a(href='#') specials
+          li
+            a(href='#') about
+    img.shop-main(src='images/iuiu.jpg')
+    section.shop-main--images
+      img.clothing.clothing--float-left(src='images/clothing1.jpg')
+      img.clothing.clothing--float-left(src='images/clothing2.jpg')
+      img.clothing.clothing--float-right(src='images/clothing3.jpg')
