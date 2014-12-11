@@ -31,21 +31,21 @@ table {
   border-spacing: 0; }
 
 @font-face {
-  font-family: 'Open Sans', sans-serif;
-  src: url('http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600'); }
+  font-family: 'Lato', sans-serif;
+  src: url('http://fonts.googleapis.com/css?family=Lato'); }
 
 body {
   background-color: #f8f0e1; }
 
 p {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Lato', sans-serif; }
 
 .logo {
   width: 4em; }
 
 .logoText {
   color: #5d8780;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 6em;
   display: inline-block;
   margin: 0 0 0 0.2em; }
@@ -59,16 +59,29 @@ nav {
     padding: 0 1.6em 0 1.6em; }
   nav a {
     color: #5d8780;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 1.5em;
     text-decoration: none; }
+    nav a:hover {
+      color: #adc6c6; }
 
 .main-content {
   max-width: 900px;
   margin: 2em auto 0 auto;
   padding: 0 6px 0 6px; }
 
+footer {
+  margin-top: 4em;
+  padding: 2em; }
+  footer p {
+    color: #545454;
+    font-size: 0.8em;
+    text-align: center; }
+
 .hero {
+  background-color: #5d8780;
+  background-image: url('/images/lolapattern.jpg');
+  background-size: contain;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -77,17 +90,14 @@ nav {
   clear: both; }
 
 .panel1 {
-  background-color: #5d8780;
   flex-shrink: 1;
   flex-basis: 317px; }
 
 .panel2 {
-  background-color: #5d8780;
   flex-shrink: 1;
   flex-basis: 333px; }
 
 .panel3 {
-  background-color: #5d8780;
   flex-shrink: 1;
   flex-basis: 247px; }
 
@@ -95,7 +105,25 @@ nav {
   margin: 0 0 -0.2em 0;
   max-width: 100%; }
   .panelImage:hover {
-    opacity: 0.2; }
+    opacity: 0.1; }
+
+.box {
+  flex-shrink: 1;
+  flex-basis: 33%;
+  padding: 0 5% 0 5%; }
+  .box img {
+    width: 100%;
+    display: block;
+    margin-bottom: 1em; }
+  .box p {
+    color: #545454;
+    font-size: 0.8em; }
+
+.plugs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 4em 0 2em 0; }
 
 .shop-main {
   display: block;
