@@ -31,45 +31,18 @@ table {
   border-spacing: 0; }
 
 @font-face {
-  font-family: 'latohairline_italic';
-  src: url('../fonts/lato-hairlineitalic-webfont.eot');
-  src: url('../fonts/lato-hairlineitalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato-hairlineitalic-webfont.woff2') format('woff2'), url('../fonts/lato-hairlineitalic-webfont.woff') format('woff'), url('../fonts/lato-hairlineitalic-webfont.ttf') format('truetype'), url('../fonts/lato-hairlineitalic-webfont.svg#latohairline_italic') format('svg');
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'latolight_italic';
-  src: url('../fonts/lato-lightitalic-webfont.eot');
-  src: url('../fonts/lato-lightitalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato-lightitalic-webfont.woff2') format('woff2'), url('../fonts/lato-lightitalic-webfont.woff') format('woff'), url('../fonts/lato-lightitalic-webfont.ttf') format('truetype'), url('../fonts/lato-lightitalic-webfont.svg#latolight_italic') format('svg');
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'latosemibold';
-  src: url('../fonts/lato-semibold-webfont.eot');
-  src: url('../fonts/lato-semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato-semibold-webfont.woff2') format('woff2'), url('../fonts/lato-semibold-webfont.woff') format('woff'), url('../fonts/lato-semibold-webfont.ttf') format('truetype'), url('../fonts/lato-semibold-webfont.svg#latosemibold') format('svg');
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
   font-family: 'latolight';
   src: url('../fonts/lato-light-webfont.eot');
   src: url('../fonts/lato-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato-light-webfont.woff2') format('woff2'), url('../fonts/lato-light-webfont.woff') format('woff'), url('../fonts/lato-light-webfont.ttf') format('truetype'), url('../fonts/lato-light-webfont.svg#latolight') format('svg');
   font-weight: normal;
   font-style: normal; }
 
-@font-face {
-  font-family: 'latoregular';
-  src: url('../fonts/lato-regular-webfont.eot');
-  src: url('../fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato-regular-webfont.woff2') format('woff2'), url('../fonts/lato-regular-webfont.woff') format('woff'), url('../fonts/lato-regular-webfont.ttf') format('truetype'), url('../fonts/lato-regular-webfont.svg#latoregular') format('svg');
-  font-weight: normal;
-  font-style: normal; }
-
 body {
   background-color: #f8f0e1; }
 
-p {
-  font-family: 'latolight', sans-serif; }
+p, h1 {
+  font-family: 'latolight', sans-serif;
+  color: #5d8780; }
 
 .logo {
   width: 10em;
@@ -174,3 +147,8 @@ footer {
   flex-direction: row;
   flex-wrap: nowrap;
   margin: 4em 0 2em 0; }
+
+.sidebox {
+  background-color: #dadcdc;
+  width: 100%;
+  padding: 1em; }

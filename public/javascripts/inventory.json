@@ -1,191 +1,192 @@
+/* All the items are named after show tunes */
 [
   {
     "imageURL": "../images/shop/dress1.jpg",
     "itemClass": "dresses",
-    "itemTitle": "djlsjdklj",
-    "itemID": "djlsjdklj",
+    "itemTitle": "Racing with the Clock",
+    "itemID": "fwtclock",
     "itemPrice": "28.99"
   },
   {
     "imageURL": "../images/shop/dress2.jpg",
     "itemClass": "dresses",
-    "itemTitle": "djlsjdklj",
-    "itemID": "djlsjdklj",
+    "itemTitle": "Dancing Through Life",
+    "itemID": "dtlife",
     "itemPrice": "28.99"
   },
   {
     "imageURL": "../images/shop/dress3.jpg",
     "itemClass": "dresses",
-    "itemTitle": "djlsjdklj",
-    "itemID": "djlsjdklj",
-    "itemPrice": "28.99"
-  },
-  {
-    "imageURL": "../images/shop/shorts1.jpg",
-    "itemClass": "shorts",
-    "itemTitle": "djlsjdklj",
-    "itemID": "djlsjdklj",
+    "itemTitle": "Tonight",
+    "itemID": "tonight",
     "itemPrice": "28.99"
   },
   {
     "imageURL": "../images/shop/skirt1.jpg",
     "itemClass": "skirts",
-    "itemTitle": "djlsjdklj",
-    "itemID": "djlsjdklj",
+    "itemTitle": "Sunday in the Park with George",
+    "itemID": "sitpwg",
     "itemPrice": "28.99"
   },
   {
     "imageURL": "../images/shop/top1.jpg",
     "itemClass": "tops",
-    "itemTitle": "djlsjdklj",
-    "itemID": "djlsjdklj",
+    "itemTitle": "Popular",
+    "itemID": "popular",
     "itemPrice": "28.99"
   },
   {
     "imageURL": "../images/shop/top2.jpg",
     "itemClass": "tops",
-    "itemTitle": "djlsjdklj",
-    "itemID": "djlsjdklj",
+    "itemTitle": "You're Gonna Love Tomorrow",
+    "itemID": "yglt",
     "itemPrice": "28.99"
   },
   {
     "imageURL": "../images/shop/top3.jpg",
     "itemClass": "tops",
-    "itemTitle": "djlsjdklj",
-    "itemID": "djlsjdklj",
+    "itemTitle": "Old Devil Moon",
+    "itemID": "odmoon",
     "itemPrice": "28.99"
   },
   {
     "imageURL": "../images/shop/top4.jpg",
-    "itemClass": "top",
-    "itemTitle": "djlsjdklj",
-    "itemID": "djlsjdklj",
+    "itemClass": "tops",
+    "itemTitle": "Think Pink",
+    "itemID": "tpink",
     "itemPrice": "28.99"
   },
   {
     "imageURL": "../images/shop/pants1.jpg",
     "itemClass": "pants",
-    "itemTitle": "djlsjdklj",
-    "itemID": "djlsjdklj",
+    "itemTitle": "When You're a Jet",
+    "itemID": "wyajet",
+    "itemPrice": "28.99"
+  },
+  {
+    "imageURL": "../images/shop/shorts1.jpg",
+    "itemClass": "shorts",
+    "itemTitle": "Out Tonight",
+    "itemID": "otonight",
     "itemPrice": "28.99"
   },
   {
     "imageURL": "../images/shop/acc1.jpg",
     "itemClass": "accessories jewelry",
-    "itemTitle": "djlsjdklj",
-    "itemID": "djlsjdklj",
+    "itemTitle": "Under the Sea",
+    "itemID": "utsea",
     "itemPrice": "28.99"
   },
   {
     "imageURL": "../images/shop/acc2.jpg",
     "itemClass": "accessories scarves",
-    "itemTitle": "djlsjdklj",
-    "itemID": "djlsjdklj",
+    "itemTitle": "Entering Grey Gardens",
+    "itemID": "eggardens",
     "itemPrice": "28.99"
   },
   {
     "imageURL": "../images/shop/acc3.jpg",
     "itemClass": "accessories handbags",
-    "itemTitle": "djlsjdklj",
-    "itemID": "djlsjdklj",
+    "itemTitle": "Polka-Dot Polka",
+    "itemID": "pdpolka",
     "itemPrice": "28.99"
   },
   {
     "imageURL": "../images/shop/acc4.jpg",
     "itemClass": "accessories handbags",
-    "itemTitle": "djlsjdklj",
-    "itemID": "djlsjdklj",
+    "itemTitle": "Any Dream Will Do",
+    "itemID": "adwdo",
     "itemPrice": "28.99"
   },
   {
     "imageURL": "../images/shop/acc5.jpg",
     "itemClass": "accessories handbags",
-    "itemTitle": "djlsjdklj",
-    "itemID": "djlsjdklj",
+    "itemTitle": "Blue moon",
+    "itemID": "bmoon",
     "itemPrice": "28.99"
   },
   {
     "imageURL": "../images/shop/acc6.jpg",
     "itemClass": "accessories eyewear",
-    "itemTitle": "djlsjdklj",
-    "itemID": "djlsjdklj",
+    "itemTitle": "Whatever Lola Wants",
+    "itemID": "wlwants",
     "itemPrice": "28.99"
   },
   {
     "imageURL": "../images/shop/acc7.jpg",
     "itemClass": "accessories jewelry",
-    "itemTitle": "djlsjdklj",
-    "itemID": "djlsjdklj",
+    "itemTitle": "Pearl Twirl",
+    "itemID": "ptwirl",
     "itemPrice": "28.99"
   },
   {
     "imageURL": "../images/shop/acc8.jpg",
     "itemClass": "accessories jewelry",
-    "itemTitle": "djlsjdklj",
-    "itemID": "djlsjdklj",
+    "itemTitle": "Goodnight and thank you",
+    "itemID": "gatyou",
     "itemPrice": "28.99"
   },
   {
     "imageURL": "../images/shop/acc9.jpg",
     "itemClass": "accessories jewelry",
-    "itemTitle": "djlsjdklj",
-    "itemID": "djlsjdklj",
+    "itemTitle": "Baubles, Bangles and Beads",
+    "itemID": "bbbeads",
     "itemPrice": "28.99"
   },
   {
     "imageURL": "../images/shop/coat1.jpg",
     "itemClass": "outerwear",
-    "itemTitle": "djlsjdklj",
-    "itemID": "djlsjdklj",
+    "itemTitle": "That Old Black Magic",
+    "itemID": "tobmagic",
     "itemPrice": "28.99"
   },
   {
     "imageURL": "../images/shop/coat2.jpg",
     "itemClass": "outerwear",
-    "itemTitle": "djlsjdklj",
-    "itemID": "djlsjdklj",
+    "itemTitle": "Seasons of Love",
+    "itemID": "solove",
     "itemPrice": "28.99"
   },
   {
     "imageURL": "../images/shop/coat3.jpg",
     "itemClass": "outerwear",
-    "itemTitle": "djlsjdklj",
-    "itemID": "djlsjdklj",
+    "itemTitle": "The Rain in Spain",
+    "itemID": "trispain",
     "itemPrice": "28.99"
   },
   {
     "imageURL": "../images/shop/coat4.jpg",
     "itemClass": "outerwear",
-    "itemTitle": "djlsjdklj",
-    "itemID": "djlsjdklj",
+    "itemTitle": " I’ve Never Been In Love Before",
+    "itemID": "inbilb",
     "itemPrice": "28.99"
   },
   {
     "imageURL": "../images/shop/shoes1.jpg",
     "itemClass": "shoes",
-    "itemTitle": "djlsjdklj",
-    "itemID": "djlsjdklj",
+    "itemTitle": "Kinky Boots",
+    "itemID": "kboots",
     "itemPrice": "28.99"
   },
   {
     "imageURL": "../images/shop/shoes2.jpg",
     "itemClass": "shoes",
-    "itemTitle": "djlsjdklj",
-    "itemID": "djlsjdklj",
+    "itemTitle": "Endgame",
+    "itemID": "egame",
     "itemPrice": "28.99"
   },
   {
     "imageURL": "../images/shop/shoes3.jpg",
     "itemClass": "shoes",
-    "itemTitle": "djlsjdklj",
-    "itemID": "djlsjdklj",
+    "itemTitle": " As Long as You’re Mine",
+    "itemID": "alaym",
     "itemPrice": "28.99"
   },
   {
     "imageURL": "../images/shop/shoes4.jpg",
     "itemClass": "shoes",
-    "itemTitle": "djlsjdklj",
-    "itemID": "djlsjdklj",
+    "itemTitle": "Footloose",
+    "itemID": "floose",
     "itemPrice": "28.99"
   }
 ]

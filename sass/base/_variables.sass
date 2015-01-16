@@ -2,26 +2,26 @@
 
 // Font Stacks
 
-@font-face
-  font-family: 'latohairline_italic'
-  src: url('../fonts/lato-hairlineitalic-webfont.eot')
-  src: url('../fonts/lato-hairlineitalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato-hairlineitalic-webfont.woff2') format('woff2'), url('../fonts/lato-hairlineitalic-webfont.woff') format('woff'), url('../fonts/lato-hairlineitalic-webfont.ttf') format('truetype'), url('../fonts/lato-hairlineitalic-webfont.svg#latohairline_italic') format('svg')
-  font-weight: normal
-  font-style: normal
+// @font-face
+//   font-family: 'latohairline_italic'
+//   src: url('../fonts/lato-hairlineitalic-webfont.eot')
+//   src: url('../fonts/lato-hairlineitalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato-hairlineitalic-webfont.woff2') format('woff2'), url('../fonts/lato-hairlineitalic-webfont.woff') format('woff'), url('../fonts/lato-hairlineitalic-webfont.ttf') format('truetype'), url('../fonts/lato-hairlineitalic-webfont.svg#latohairline_italic') format('svg')
+//   font-weight: normal
+//   font-style: normal
 
-@font-face
-  font-family: 'latolight_italic'
-  src: url('../fonts/lato-lightitalic-webfont.eot')
-  src: url('../fonts/lato-lightitalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato-lightitalic-webfont.woff2') format('woff2'), url('../fonts/lato-lightitalic-webfont.woff') format('woff'), url('../fonts/lato-lightitalic-webfont.ttf') format('truetype'), url('../fonts/lato-lightitalic-webfont.svg#latolight_italic') format('svg')
-  font-weight: normal
-  font-style: normal
+// @font-face
+//   font-family: 'latolight_italic'
+//   src: url('../fonts/lato-lightitalic-webfont.eot')
+//   src: url('../fonts/lato-lightitalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato-lightitalic-webfont.woff2') format('woff2'), url('../fonts/lato-lightitalic-webfont.woff') format('woff'), url('../fonts/lato-lightitalic-webfont.ttf') format('truetype'), url('../fonts/lato-lightitalic-webfont.svg#latolight_italic') format('svg')
+//   font-weight: normal
+//   font-style: normal
 
-@font-face
-  font-family: 'latosemibold'
-  src: url('../fonts/lato-semibold-webfont.eot')
-  src: url('../fonts/lato-semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato-semibold-webfont.woff2') format('woff2'), url('../fonts/lato-semibold-webfont.woff') format('woff'), url('../fonts/lato-semibold-webfont.ttf') format('truetype'), url('../fonts/lato-semibold-webfont.svg#latosemibold') format('svg')
-  font-weight: normal
-  font-style: normal
+// @font-face
+//   font-family: 'latosemibold'
+//   src: url('../fonts/lato-semibold-webfont.eot')
+//   src: url('../fonts/lato-semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato-semibold-webfont.woff2') format('woff2'), url('../fonts/lato-semibold-webfont.woff') format('woff'), url('../fonts/lato-semibold-webfont.ttf') format('truetype'), url('../fonts/lato-semibold-webfont.svg#latosemibold') format('svg')
+//   font-weight: normal
+//   font-style: normal
 
 @font-face
   font-family: 'latolight'
@@ -30,18 +30,19 @@
   font-weight: normal
   font-style: normal
 
-@font-face
-  font-family: 'latoregular'
-  src: url('../fonts/lato-regular-webfont.eot')
-  src: url('../fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato-regular-webfont.woff2') format('woff2'), url('../fonts/lato-regular-webfont.woff') format('woff'), url('../fonts/lato-regular-webfont.ttf') format('truetype'), url('../fonts/lato-regular-webfont.svg#latoregular') format('svg')
-  font-weight: normal
-  font-style: normal
+// @font-face
+//   font-family: 'latoregular'
+//   src: url('../fonts/lato-regular-webfont.eot')
+//   src: url('../fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato-regular-webfont.woff2') format('woff2'), url('../fonts/lato-regular-webfont.woff') format('woff'), url('../fonts/lato-regular-webfont.ttf') format('truetype'), url('../fonts/lato-regular-webfont.svg#latoregular') format('svg')
+//   font-weight: normal
+//   font-style: normal
 
 $font-family--primary    : 'latolight', sans-serif
 
 // Color Usage
 
 $color-primary    : #5d8780
+$color-primary--2 : lighten(#cdd0cf, 5)
 $color-secondary  : lighten(#f5ead5, 3)
 $color-tertiary   : lighten(#80a6a7, 15)
 $color-accent     : #FFEFCB
@@ -52,5 +53,8 @@ $color-body-text  : #545454
 body
   background-color: $color-secondary
 
-p
+p,
+h1
   font-family: $font-family--primary
+  color: $color-primary
+
