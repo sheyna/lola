@@ -72,14 +72,16 @@ p {
   font-family: 'latolight', sans-serif; }
 
 .logo {
-  width: 4em; }
+  width: 10em;
+  margin: 0 0 -1em 0.5em; }
 
 .logoText {
   color: #5d8780;
   font-family: 'latolight', sans-serif;
   font-size: 6em;
   display: inline-block;
-  margin: 0 0 0 0.2em; }
+  margin: 0 0 0 0.1em;
+  padding-top: -2em; }
 
 nav {
   display: inline-block;
