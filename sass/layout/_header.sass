@@ -17,7 +17,9 @@ nav
     li
       list-style: none
       display: inline-block
-      padding: 0 1.6em 0 1.6em
+      padding: 0 1.6em
+      @media only screen and (max-width: 450px)
+        padding: 0 1em
   a
     color: $color-primary
     font-family: $font-family--primary

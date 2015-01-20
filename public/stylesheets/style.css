@@ -69,7 +69,10 @@ nav {
   nav ul li {
     list-style: none;
     display: inline-block;
-    padding: 0 1.6em 0 1.6em; }
+    padding: 0 1.6em; }
+    @media only screen and (max-width: 450px) {
+      nav ul li {
+        padding: 0 1em; } }
   nav a {
     color: #5d8780;
     font-family: 'latolight', sans-serif;
@@ -141,7 +144,7 @@ footer {
 .box {
   flex-shrink: 1;
   flex-basis: 33%;
-  padding: 0 2% 0 2%; }
+  padding: 0 1% 0 1.2%; }
   .box img {
     width: 100%;
     display: block;
@@ -164,23 +167,36 @@ footer {
   width: 45%;
   padding: 0.8em;
   overflow: auto;
-  margin: 0 0.6em;
+  margin: 0 1%;
   display: inline-block; }
-  @media only screen and (max-width: 450px) {
+  @media only screen and (max-width: 862px) {
+    .sidebox {
+      width: 43%;
+      margin: 0 1%; } }
+  @media only screen and (max-width: 519px) {
     .sidebox {
       width: 94%;
-      margin: 0 0 0.5em 0; } }
+      margin: 0 0 1% 0; } }
   .sidebox:hover {
     background-color: #76a19a; }
     .sidebox:hover h1 {
       color: #dadcdc; }
   .sidebox h1 {
     font-size: 1.8em; }
+    @media only screen and (max-width: 862px) {
+      .sidebox h1 {
+        font-size: 1em; } }
     .sidebox h1 .top {
       font-size: 2.4em;
       float: left;
       padding: -0.4em 1em -0.4em 0;
       margin: 0 0.2em 0 0.2em; }
+      @media only screen and (max-width: 862px) {
+        .sidebox h1 .top {
+          font-size: 2.2em; } }
+
+#inventory {
+  min-height: 30em; }
 
 .inventory-listing {
   width: 21%;
