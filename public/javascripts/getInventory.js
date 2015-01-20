@@ -7,7 +7,11 @@ function getInventory(category) {
       var statusHTML = '';
       for (var i = 0; i < inventory.length; i++) {
         if (category == 'all' || inventory[i].itemClass == category || (category == 'specials' && inventory[i].special == 'yes')) {
-          statusHTML += '<section class="inventory-listing"><img src="' + inventory[i].imageURL + '" alt="' + inventory[i].itemTitle + '"><h1>' + inventory[i].itemTitle + '</h1><p>$' + inventory[i].itemPrice + '</p></section>';
+          statusHTML += '<section class="inventory-listing"><img src="' + inventory[i].imageURL + '" alt="' + inventory[i].itemTitle + '"><h1>' + inventory[i].itemTitle + '</h1><p>$' + inventory[i].itemPrice;
+            if (inventory[i].special == 'yes') {
+              statusHTML += ' <span class="special">' + inventory[i].discount + ' OFF of $' + inventory[i].originalPrice + '</span>';
+            }
+          statusHTML += '</p></section>';
         }
       }
       document.getElementById('inventory').innerHTML = statusHTML;
