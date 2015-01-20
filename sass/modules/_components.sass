@@ -5,6 +5,9 @@
   overflow: auto
   margin: 0 0.6em
   display: inline-block
+  @media only screen and (max-width: 450px)
+    width: 94%
+    margin: 0 0 0.5em 0
   &:hover
     background-color: $color-quinary
     h1
@@ -18,10 +21,14 @@
       margin: 0 0.2em 0 0.2em
 
 .inventory-listing
-  width: 29%
-  margin: 1em
+  width: 21%
+  margin: 2%
   display: inline-block
   overflow: auto
+  vertical-align: text-top
+  @media only screen and (max-width: 450px)
+    width: 41%
+    margin: 4%
   img
     width: 100%
   h1

@@ -6,7 +6,7 @@ function getInventory(category) {
       var inventory = JSON.parse(xhr.responseText);
       var statusHTML = '';
       for (var i = 0; i < inventory.length; i++) {
-        if (category == 'all' || inventory[i].itemClass == category) {
+        if (category == 'all' || inventory[i].itemClass == category || (category == 'specials' && inventory[i].special == 'yes')) {
           statusHTML += '<section class="inventory-listing"><img src="' + inventory[i].imageURL + '" alt="' + inventory[i].itemTitle + '"><h1>' + inventory[i].itemTitle + '</h1><p>$' + inventory[i].itemPrice + '</p></section>';
         }
       }
@@ -15,10 +15,6 @@ function getInventory(category) {
   };
   xhr.send();
 }
-
-window.onload = function() {
-  getInventory('all');
-};
 
 document.getElementById('tops').addEventListener("click", function() {
   getInventory('tops');
