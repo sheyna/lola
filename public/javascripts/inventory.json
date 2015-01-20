@@ -1,4 +1,3 @@
-/* All the items are named after show tunes */
 [
   {
     "imageURL": "../images/shop/dress1.jpg",
@@ -72,63 +71,63 @@
   },
   {
     "imageURL": "../images/shop/acc1.jpg",
-    "itemClass": "accessories jewelry",
+    "itemClass": "accessories",
     "itemTitle": "Under the Sea",
     "itemID": "utsea",
     "itemPrice": "28.99"
   },
   {
     "imageURL": "../images/shop/acc2.jpg",
-    "itemClass": "accessories scarves",
+    "itemClass": "accessories",
     "itemTitle": "Entering Grey Gardens",
     "itemID": "eggardens",
     "itemPrice": "28.99"
   },
   {
     "imageURL": "../images/shop/acc3.jpg",
-    "itemClass": "accessories handbags",
+    "itemClass": "accessories",
     "itemTitle": "Polka-Dot Polka",
     "itemID": "pdpolka",
     "itemPrice": "28.99"
   },
   {
     "imageURL": "../images/shop/acc4.jpg",
-    "itemClass": "accessories handbags",
+    "itemClass": "accessories",
     "itemTitle": "Any Dream Will Do",
     "itemID": "adwdo",
     "itemPrice": "28.99"
   },
   {
     "imageURL": "../images/shop/acc5.jpg",
-    "itemClass": "accessories handbags",
-    "itemTitle": "Blue moon",
+    "itemClass": "accessories",
+    "itemTitle": "Blue Moon",
     "itemID": "bmoon",
     "itemPrice": "28.99"
   },
   {
     "imageURL": "../images/shop/acc6.jpg",
-    "itemClass": "accessories eyewear",
+    "itemClass": "accessories",
     "itemTitle": "Whatever Lola Wants",
     "itemID": "wlwants",
     "itemPrice": "28.99"
   },
   {
     "imageURL": "../images/shop/acc7.jpg",
-    "itemClass": "accessories jewelry",
+    "itemClass": "accessories",
     "itemTitle": "Pearl Twirl",
     "itemID": "ptwirl",
     "itemPrice": "28.99"
   },
   {
     "imageURL": "../images/shop/acc8.jpg",
-    "itemClass": "accessories jewelry",
-    "itemTitle": "Goodnight and thank you",
+    "itemClass": "accessories",
+    "itemTitle": "Goodnight and Thank You",
     "itemID": "gatyou",
     "itemPrice": "28.99"
   },
   {
     "imageURL": "../images/shop/acc9.jpg",
-    "itemClass": "accessories jewelry",
+    "itemClass": "accessories",
     "itemTitle": "Baubles, Bangles and Beads",
     "itemID": "bbbeads",
     "itemPrice": "28.99"

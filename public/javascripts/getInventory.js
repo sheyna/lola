@@ -1,17 +1,53 @@
-function getInventory(albumNumber) {
-  var url = "inventory.json";
-  $.getJSON(url, function(data) {
-    var albums = data;
-    var albumFigure = '<figure><img src="' + albums[albumNumber].imageURL + '"';
-    var albumFigureAlt = 'alt="' + albums[albumNumber].imageAlt + '"';
-    var albumClass = 'class="winner">';
-    var albumFigCaption = '<figcaption>' + albums[albumNumber].caption + '</figcaption>';
-    var albumCloseFig = '</figure>';
-    $('#RecommendedAlbum').append(albumFigure + albumFigureAlt + albumClass + albumFigCaption + albumCloseFig);
-    $('#RecommendedAlbum').append('<p class="description">' + albums[albumNumber].description + '</p>');
-    var albumBtnStart = '<button>';
-    var albumBtnLink = '<a href="' + albums[albumNumber].youTubeURL + '">Find</a>';
-    var albumBtnClose = '</button>';
-    $('#RecommendedAlbum').append(albumBtnStart + albumBtnLink + albumBtnClose);
-  });
+function getInventory(category) {
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'javascripts/inventory.json');
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var inventory = JSON.parse(xhr.responseText);
+      var statusHTML = '';
+      for (var i = 0; i < inventory.length; i++) {
+        if (category == 'all' || inventory[i].itemClass == category) {
+          statusHTML += '<section class="inventory-listing"><img src="' + inventory[i].imageURL + '" alt="' + inventory[i].itemTitle + '"><h1>' + inventory[i].itemTitle + '</h1><p>$' + inventory[i].itemPrice + '</p></section>';
+        }
+      }
+      document.getElementById('inventory').innerHTML = statusHTML;
+    }
+  };
+  xhr.send();
+}
+
+window.onload = function() {
+  getInventory('all');
 };
+
+document.getElementById('tops').addEventListener("click", function() {
+  getInventory('tops');
+}, false);
+
+document.getElementById('dresses').addEventListener("click", function() {
+  getInventory('dresses');
+}, false);
+
+document.getElementById('shorts').addEventListener("click", function() {
+  getInventory('shorts');
+}, false);
+
+document.getElementById('pants').addEventListener("click", function() {
+  getInventory('pants');
+}, false);
+
+document.getElementById('skirts').addEventListener("click", function() {
+  getInventory('skirts');
+}, false);
+
+document.getElementById('accessories').addEventListener("click", function() {
+  getInventory('accessories');
+}, false);
+
+document.getElementById('outerwear').addEventListener("click", function() {
+  getInventory('outerwear');
+}, false);
+
+document.getElementById('shoes').addEventListener("click", function() {
+  getInventory('shoes');
+}, false);
