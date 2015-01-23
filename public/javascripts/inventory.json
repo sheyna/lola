@@ -4,9 +4,9 @@
     "itemClass": "dresses",
     "itemTitle": "Racing with the Clock",
     "itemID": "fwtclock",
-    "itemPrice": "28.99",
-    "special": "no",
-    "discount": "no",
+    "itemPrice": 28.99,
+    "special": 0,
+    "discount": 0,
     "originalPrice": "N/A"
   },
   {
@@ -14,9 +14,9 @@
     "itemClass": "dresses",
     "itemTitle": "Dancing Through Life",
     "itemID": "dtlife",
-    "itemPrice": "28.99",
-    "special": "no",
-    "discount": "no",
+    "itemPrice": 28.99,
+    "special": 0,
+    "discount": 0,
     "originalPrice": "N/A"
   },
   {
@@ -24,9 +24,9 @@
     "itemClass": "dresses",
     "itemTitle": "Tonight",
     "itemID": "tonight",
-    "itemPrice": "28.99",
-    "special": "no",
-    "discount": "no",
+    "itemPrice": 28.99,
+    "special": 0,
+    "discount": 0,
     "originalPrice": "N/A"
   },
   {
@@ -34,9 +34,9 @@
     "itemClass": "skirts",
     "itemTitle": "Sunday in the Park with George",
     "itemID": "sitpwg",
-    "itemPrice": "28.99",
-    "special": "no",
-    "discount": "no",
+    "itemPrice": 28.99,
+    "special": 0,
+    "discount": 0,
     "originalPrice": "N/A"
   },
   {
@@ -44,9 +44,9 @@
     "itemClass": "tops",
     "itemTitle": "Popular",
     "itemID": "popular",
-    "itemPrice": "28.99",
-    "special": "no",
-    "discount": "no",
+    "itemPrice": 28.99,
+    "special": 0,
+    "discount": 0,
     "originalPrice": "N/A"
   },
   {
@@ -54,9 +54,9 @@
     "itemClass": "tops",
     "itemTitle": "You're Gonna Love Tomorrow",
     "itemID": "yglt",
-    "itemPrice": "28.99",
-    "special": "no",
-    "discount": "no",
+    "itemPrice": 28.99,
+    "special": 0,
+    "discount": 0,
     "originalPrice": "N/A"
   },
   {
@@ -64,9 +64,9 @@
     "itemClass": "tops",
     "itemTitle": "Old Devil Moon",
     "itemID": "odmoon",
-    "itemPrice": "28.99",
-    "special": "no",
-    "discount": "no",
+    "itemPrice": 28.99,
+    "special": 0,
+    "discount": 0,
     "originalPrice": "N/A"
   },
   {
@@ -74,9 +74,9 @@
     "itemClass": "tops",
     "itemTitle": "Think Pink",
     "itemID": "tpink",
-    "itemPrice": "28.99",
-    "special": "yes",
-    "discount": "10%",
+    "itemPrice": 28.99,
+    "special": true,
+    "discount": 10,
     "originalPrice": "32.21"
   },
   {
@@ -84,9 +84,9 @@
     "itemClass": "pants",
     "itemTitle": "When You're a Jet",
     "itemID": "wyajet",
-    "itemPrice": "28.99",
-    "special": "no",
-    "discount": "no",
+    "itemPrice": 28.99,
+    "special": 0,
+    "discount": 0,
     "originalPrice": "N/A"
   },
   {
@@ -94,9 +94,9 @@
     "itemClass": "shorts",
     "itemTitle": "Out Tonight",
     "itemID": "otonight",
-    "itemPrice": "28.99",
-    "special": "no",
-    "discount": "no",
+    "itemPrice": 28.99,
+    "special": 0,
+    "discount": 0,
     "originalPrice": "N/A"
   },
   {
@@ -104,9 +104,9 @@
     "itemClass": "accessories",
     "itemTitle": "Under the Sea",
     "itemID": "utsea",
-    "itemPrice": "28.99",
-    "special": "yes",
-    "discount": "20%",
+    "itemPrice": 28.99,
+    "special": true,
+    "discount": 20,
     "originalPrice": "36.23"
   },
   {
@@ -114,9 +114,9 @@
     "itemClass": "accessories",
     "itemTitle": "Entering Grey Gardens",
     "itemID": "eggardens",
-    "itemPrice": "28.99",
-    "special": "yes",
-    "discount": "20%",
+    "itemPrice": 28.99,
+    "special": true,
+    "discount": 20,
     "originalPrice": "36.23"
   },
   {
@@ -124,9 +124,9 @@
     "itemClass": "accessories",
     "itemTitle": "Polka-Dot Polka",
     "itemID": "pdpolka",
-    "itemPrice": "28.99",
-    "special": "yes",
-    "discount": "20%",
+    "itemPrice": 28.99,
+    "special": true,
+    "discount": 20,
     "originalPrice": "36.23"
   },
   {
@@ -134,9 +134,9 @@
     "itemClass": "accessories",
     "itemTitle": "Any Dream Will Do",
     "itemID": "adwdo",
-    "itemPrice": "28.99",
-    "special": "yes",
-    "discount": "20%",
+    "itemPrice": 28.99,
+    "special": true,
+    "discount": 20,
     "originalPrice": "36.23"
   },
   {
@@ -144,9 +144,9 @@
     "itemClass": "accessories",
     "itemTitle": "Blue Moon",
     "itemID": "bmoon",
-    "itemPrice": "28.99",
-    "special": "yes",
-    "discount": "20%",
+    "itemPrice": 28.99,
+    "special": true,
+    "discount": 20,
     "originalPrice": "36.23"
   },
   {
@@ -154,9 +154,9 @@
     "itemClass": "accessories",
     "itemTitle": "Whatever Lola Wants",
     "itemID": "wlwants",
-    "itemPrice": "28.99",
-    "special": "yes",
-    "discount": "20%",
+    "itemPrice": 28.99,
+    "special": true,
+    "discount": 20,
     "originalPrice": "36.23"
   },
   {
@@ -164,9 +164,9 @@
     "itemClass": "accessories",
     "itemTitle": "Pearl Twirl",
     "itemID": "ptwirl",
-    "itemPrice": "28.99",
-    "special": "yes",
-    "discount": "20%",
+    "itemPrice": 28.99,
+    "special": true,
+    "discount": 20,
     "originalPrice": "36.23"
   },
   {
@@ -174,9 +174,9 @@
     "itemClass": "accessories",
     "itemTitle": "Goodnight and Thank You",
     "itemID": "gatyou",
-    "itemPrice": "28.99",
-    "special": "yes",
-    "discount": "20%",
+    "itemPrice": 28.99,
+    "special": true,
+    "discount": 20,
     "originalPrice": "36.23"
   },
   {
@@ -184,9 +184,9 @@
     "itemClass": "accessories",
     "itemTitle": "Baubles, Bangles and Beads",
     "itemID": "bbbeads",
-    "itemPrice": "28.99",
-    "special": "yes",
-    "discount": "20%",
+    "itemPrice": 28.99,
+    "special": true,
+    "discount": 20,
     "originalPrice": "36.23"
   },
   {
@@ -194,9 +194,9 @@
     "itemClass": "outerwear",
     "itemTitle": "That Old Black Magic",
     "itemID": "tobmagic",
-    "itemPrice": "28.99",
-    "special": "no",
-    "discount": "no",
+    "itemPrice": 28.99,
+    "special": 0,
+    "discount": 0,
     "originalPrice": "N/A"
   },
   {
@@ -204,9 +204,9 @@
     "itemClass": "outerwear",
     "itemTitle": "Seasons of Love",
     "itemID": "solove",
-    "itemPrice": "28.99",
-    "special": "yes",
-    "discount": "10%",
+    "itemPrice": 28.99,
+    "special": true,
+    "discount": 10,
     "originalPrice": "32.21"
   },
   {
@@ -214,9 +214,9 @@
     "itemClass": "outerwear",
     "itemTitle": "The Rain in Spain",
     "itemID": "trispain",
-    "itemPrice": "28.99",
-    "special": "no",
-    "discount": "no",
+    "itemPrice": 28.99,
+    "special": 0,
+    "discount": 0,
     "originalPrice": "N/A"
   },
   {
@@ -224,9 +224,9 @@
     "itemClass": "outerwear",
     "itemTitle": " I’ve Never Been In Love Before",
     "itemID": "inbilb",
-    "itemPrice": "28.99",
-    "special": "no",
-    "discount": "no",
+    "itemPrice": 28.99,
+    "special": 0,
+    "discount": 0,
     "originalPrice": "N/A"
   },
   {
@@ -234,9 +234,9 @@
     "itemClass": "shoes",
     "itemTitle": "Kinky Boots",
     "itemID": "kboots",
-    "itemPrice": "28.99",
-    "special": "no",
-    "discount": "no",
+    "itemPrice": 28.99,
+    "special": 0,
+    "discount": 0,
     "originalPrice": "N/A"
   },
   {
@@ -244,9 +244,9 @@
     "itemClass": "shoes",
     "itemTitle": "Endgame",
     "itemID": "egame",
-    "itemPrice": "28.99",
-    "special": "no",
-    "discount": "no",
+    "itemPrice": 28.99,
+    "special": 0,
+    "discount": 0,
     "originalPrice": "N/A"
   },
   {
@@ -254,9 +254,9 @@
     "itemClass": "shoes",
     "itemTitle": " As Long as You’re Mine",
     "itemID": "alaym",
-    "itemPrice": "28.99",
-    "special": "no",
-    "discount": "no",
+    "itemPrice": 28.99,
+    "special": 0,
+    "discount": 0,
     "originalPrice": "N/A"
   },
   {
@@ -264,9 +264,9 @@
     "itemClass": "shoes",
     "itemTitle": "Footloose",
     "itemID": "floose",
-    "itemPrice": "28.99",
-    "special": "no",
-    "discount": "no",
+    "itemPrice": 28.99,
+    "special": 0,
+    "discount": 0,
     "originalPrice": "N/A"
   }
 ]
