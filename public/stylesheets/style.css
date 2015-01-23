@@ -84,7 +84,7 @@ nav {
 .main-content {
   max-width: 900px;
   margin: 2em auto 0 auto;
-  padding: 0 6px 0 6px;
+  padding: 0 1em 0 1em;
   overflow: auto; }
 
 footer {
@@ -105,6 +105,9 @@ footer {
   max-width: 897px;
   margin: 1.5em auto 1.5em auto;
   clear: both; }
+  @media only screen and (max-width: 862px) {
+    .hero {
+      margin-bottom: 0.5em; } }
 
 .panel1 {
   flex-shrink: 1;
@@ -141,42 +144,24 @@ footer {
       color: #adc6c6;
       cursor: pointer; }
 
-.box {
-  flex-shrink: 1;
-  flex-basis: 33%;
-  padding: 0 1% 0 1.2%; }
-  .box img {
-    width: 100%;
-    display: block;
-    margin-bottom: 1em; }
-  .box p {
-    color: #545454;
-    font-size: 0.8em; }
-
 .plugs {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   margin: 2em 0 2em 0; }
-  @media only screen and (max-width: 450px) {
+  @media only screen and (max-width: 862px) {
     .plugs {
-      margin-top: 0.6em; } }
+      margin: 0.7em 0 0.7em 0; } }
 
 .sidebox {
+  flex-shrink: 1;
+  flex-basis: 48%;
   background-color: #dadcdc;
-  width: 45%;
   padding: 0.8em;
-  overflow: auto;
-  margin: 0 1%;
-  display: inline-block; }
-  @media only screen and (max-width: 862px) {
+  margin: 0 1%; }
+  @media only screen and (max-width: 450px) {
     .sidebox {
-      width: 43%;
-      margin: 0 1%; } }
-  @media only screen and (max-width: 519px) {
-    .sidebox {
-      width: 94%;
-      margin: 0 0 1% 0; } }
+      padding: 0.4em; } }
   .sidebox:hover {
     background-color: #76a19a; }
     .sidebox:hover h1 {
@@ -194,6 +179,18 @@ footer {
       @media only screen and (max-width: 862px) {
         .sidebox h1 .top {
           font-size: 2.2em; } }
+
+.box {
+  flex-shrink: 1;
+  flex-basis: 33%;
+  padding: 0 1% 0 1.2%; }
+  .box img {
+    width: 100%;
+    display: block;
+    margin-bottom: 1em; }
+  .box p {
+    color: #545454;
+    font-size: 0.8em; }
 
 #inventory {
   min-height: 30em; }

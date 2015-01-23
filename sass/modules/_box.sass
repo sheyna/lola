@@ -1,3 +1,35 @@
+.plugs
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+  margin: 2em 0 2em 0
+  @media only screen and (max-width: 862px)
+    margin: 0.7em 0 0.7em 0
+
+.sidebox
+  flex-shrink: 1
+  flex-basis: 48%
+  background-color: $color-quaternary
+  padding: 0.8em
+  margin: 0 1%
+  @media only screen and (max-width: 450px)
+    padding: 0.4em
+  &:hover
+    background-color: $color-quinary
+    h1
+      color: $color-quaternary
+  h1
+    font-size: 1.8em
+    @media only screen and (max-width: 862px)
+      font-size: 1em
+    .top
+      font-size: 2.4em
+      float: left
+      padding: -0.4em 1em -0.4em 0
+      margin: 0 0.2em 0 0.2em
+      @media only screen and (max-width: 862px)
+        font-size: 2.2em
+
 .box
   flex-shrink: 1
   flex-basis: 33%
@@ -9,11 +41,3 @@
   p
     color: $color-body-text
     font-size: 0.8em
-
-.plugs
-  display: flex
-  flex-direction: row
-  flex-wrap: nowrap
-  margin: 2em 0 2em 0
-  @media only screen and (max-width: 450px)
-    margin-top: 0.6em

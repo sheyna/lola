@@ -1,7 +1,7 @@
 #Lola: A Demo Clothing Online Store
 ####By Sheyna Watkins
 
-This project was created in Node.Js Express. I wrote the Jade, Sass and the additional JavaScript.
+This project was created in Node.js Express. I wrote the Jade, Sass and the additional JavaScript.
 
 This is still a work in progress.
 
