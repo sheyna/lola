@@ -111,6 +111,9 @@ footer {
   background-color: #5d8780;
   background-image: url('/images/lolapattern.jpg');
   background-size: contain;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-flex-wrap: nowrap;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -122,14 +125,20 @@ footer {
       margin-bottom: 0.5em; } }
 
 .panel1 {
+  -webkit-flex-shrink: 1;
+  -webkit-flex-basis: 317px;
   flex-shrink: 1;
   flex-basis: 317px; }
 
 .panel2 {
+  -webkit-flex-shrink: 1;
+  -webkit-flex-basis: 333px;
   flex-shrink: 1;
   flex-basis: 333px; }
 
 .panel3 {
+  -webkit-flex-shrink: 1;
+  -webkit-flex-basis: 247px;
   flex-shrink: 1;
   flex-basis: 247px; }
 
@@ -157,6 +166,9 @@ footer {
       cursor: pointer; }
 
 .plugs {
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-flex-wrap: nowrap;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -167,10 +179,14 @@ footer {
       margin: 0.7em auto 0.7em auto; } }
   @media only screen and (max-width: 450px) {
     .plugs {
+      -webkit-flex-wrap: wrap;
+      -webkit-justify-content: center;
       flex-wrap: wrap;
       justify-content: center; } }
 
 .sidebox {
+  -webkit-flex-shrink: 1;
+  -webkit-flex-basis: 48%;
   flex-shrink: 1;
   flex-basis: 48%;
   background-color: #dadcdc;
@@ -186,6 +202,7 @@ footer {
     .sidebox {
       font-size: 80%;
       padding: 1em 0.4em;
+      -webkit-flex-basis: 100%;
       flex-basis: 100%;
       margin: 0.1em auto 0.2em auto; } }
   .sidebox:hover {
@@ -201,11 +218,14 @@ footer {
       margin: 0 0.2em 0 0.2em; }
 
 .box {
+  -webkit-flex-shrink: 1;
+  -webkit-flex-basis: 33%;
   flex-shrink: 1;
   flex-basis: 33%;
   padding: 0 1% 0 1.2%; }
   @media only screen and (max-width: 450px) {
     .box {
+      -webkit-flex-basis: 47.5%;
       flex-basis: 47.5%;
       margin-bottom: 1em; } }
   @media only screen and (max-width: 450px) {

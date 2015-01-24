@@ -1,4 +1,7 @@
 .plugs
+  display: -webkit-flex
+  -webkit-flex-direction: row
+  -webkit-flex-wrap: nowrap
   display: flex
   flex-direction: row
   flex-wrap: nowrap
@@ -7,10 +10,14 @@
   @media only screen and (max-width: 862px)
     margin: 0.7em auto 0.7em auto
   @media only screen and (max-width: 450px)
+    -webkit-flex-wrap: wrap
+    -webkit-justify-content: center
     flex-wrap: wrap
     justify-content: center
 
 .sidebox
+  -webkit-flex-shrink: 1
+  -webkit-flex-basis: 48%
   flex-shrink: 1
   flex-basis: 48%
   background-color: $color-quaternary
@@ -23,6 +30,7 @@
   @media only screen and (max-width: 450px)
     font-size: 80%
     padding: 1em 0.4em
+    -webkit-flex-basis: 100%
     flex-basis: 100%
     margin: 0.1em auto 0.2em auto
   &:hover
@@ -38,12 +46,16 @@
       margin: 0 0.2em 0 0.2em
 
 .box
+  -webkit-flex-shrink: 1
+  -webkit-flex-basis: 33%
   flex-shrink: 1
   flex-basis: 33%
   padding: 0 1% 0 1.2%
   @media only screen and (max-width: 450px)
+    -webkit-flex-basis: 47.5%
     flex-basis: 47.5%
     margin-bottom: 1em
+
   &:nth-child(3)
     @media only screen and (max-width: 450px)
       display: none
