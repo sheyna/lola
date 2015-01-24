@@ -12,9 +12,9 @@ function getInventory(category) {
           statusHTML += '<section class="inventory-listing"><img src="' + inventory[i].imageURL + '" alt="' + inventory[i].itemTitle + '"><h1>' + inventory[i].itemTitle + '</h1><p>$';
             if (inventory[i].special) {
               var priceCalc = getDiscount(inventory[i].itemPrice, inventory[i].discount);
-              statusHTML += priceCalc + ' <span class="special">' + inventory[i].discount + '% OFF of $' + inventory[i].itemPrice + '</span> ';
+              statusHTML += priceCalc + ' <span class="special">' + inventory[i].discount + '% OFF of $' + (inventory[i].itemPrice.toFixed(2)) + '</span> ';
             } else {
-              statusHTML += inventory[i].itemPrice;
+              statusHTML += (inventory[i].itemPrice.toFixed(2));
             }
           statusHTML += '</p></section>';
         }

@@ -54,6 +54,9 @@ p, h1 {
 .logo {
   width: 10em;
   margin: 0 0 -1em 0.5em; }
+  @media only screen and (max-width: 450px) {
+    .logo {
+      width: 7.5em; } }
 
 .logoText {
   color: #5d8780;
@@ -62,6 +65,9 @@ p, h1 {
   display: inline-block;
   margin: 0 0 0 0.1em;
   padding-top: -2em; }
+  @media only screen and (max-width: 450px) {
+    .logoText {
+      font-size: 4.5em; } }
 
 nav {
   display: inline-block;
@@ -86,10 +92,16 @@ nav {
   margin: 2em auto 0 auto;
   padding: 0 1em 0 1em;
   overflow: auto; }
+  @media only screen and (max-width: 450px) {
+    .main-content {
+      margin-top: 1em; } }
 
 footer {
   margin-top: 4em;
   padding: 2em; }
+  @media only screen and (max-width: 450px) {
+    footer {
+      margin-top: 1em; } }
   footer p {
     color: #545454;
     font-size: 0.8em;

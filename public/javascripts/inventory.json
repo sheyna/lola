@@ -85,7 +85,7 @@
     "itemClass": "shorts",
     "itemTitle": "Out Tonight",
     "itemID": "otonight",
-    "itemPrice": 21.99,
+    "itemPrice": 21.90,
     "special": 1,
     "discount": 10
   },
@@ -148,7 +148,7 @@
     "itemClass": "accessories",
     "itemTitle": "Pearl Twirl",
     "itemID": "ptwirl",
-    "itemPrice": 18.99,
+    "itemPrice": 18.80,
     "special": 1,
     "discount": 20
   },
@@ -184,7 +184,7 @@
     "itemClass": "outerwear",
     "itemTitle": "Seasons of Love",
     "itemID": "solove",
-    "itemPrice": 22.99,
+    "itemPrice": 22.00,
     "special": 1,
     "discount": 10
   },
