@@ -3,8 +3,12 @@
   flex-direction: row
   flex-wrap: nowrap
   margin: 2em 0 2em 0
+  overflow: auto
   @media only screen and (max-width: 862px)
-    margin: 0.7em 0 0.7em 0
+    margin: 0.7em auto 0.7em auto
+  @media only screen and (max-width: 450px)
+    flex-wrap: wrap
+    justify-content: center
 
 .sidebox
   flex-shrink: 1
@@ -12,28 +16,37 @@
   background-color: $color-quaternary
   padding: 0.8em
   margin: 0 1%
+  @media only screen and (max-width: 800px)
+    font-size: 80%
+  @media only screen and (max-width: 660px)
+    font-size: 50%
   @media only screen and (max-width: 450px)
-    padding: 0.4em
+    font-size: 80%
+    padding: 1em 0.4em
+    flex-basis: 100%
+    margin: 0.1em auto 0.2em auto
   &:hover
     background-color: $color-quinary
     h1
       color: $color-quaternary
   h1
     font-size: 1.8em
-    @media only screen and (max-width: 862px)
-      font-size: 1em
     .top
       font-size: 2.4em
       float: left
       padding: -0.4em 1em -0.4em 0
       margin: 0 0.2em 0 0.2em
-      @media only screen and (max-width: 862px)
-        font-size: 2.2em
 
 .box
   flex-shrink: 1
   flex-basis: 33%
   padding: 0 1% 0 1.2%
+  @media only screen and (max-width: 450px)
+    flex-basis: 47.5%
+    margin-bottom: 1em
+  &:nth-child(3)
+    @media only screen and (max-width: 450px)
+      display: none
   img
     width: 100%
     display: block

@@ -86,8 +86,8 @@
     "itemTitle": "Out Tonight",
     "itemID": "otonight",
     "itemPrice": 21.99,
-    "special": 0,
-    "discount": 0
+    "special": 1,
+    "discount": 10
   },
   {
     "imageURL": "../images/shop/acc1.jpg",
