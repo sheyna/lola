@@ -108,7 +108,10 @@ footer {
     text-align: center; }
 
 .hero {
-  background-color: #5d8780;
+  max-width: 897px;
+  margin: 1.5em auto 1.5em auto;
+  clear: both;
+  overflow: auto;
   background-image: url('/images/lolapattern.jpg');
   background-size: contain;
   display: -webkit-flex;
@@ -116,10 +119,7 @@ footer {
   -webkit-flex-wrap: nowrap;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  max-width: 897px;
-  margin: 1.5em auto 1.5em auto;
-  clear: both; }
+  flex-wrap: nowrap; }
   @media only screen and (max-width: 862px) {
     .hero {
       margin-bottom: 0.5em; } }
@@ -128,19 +128,22 @@ footer {
   -webkit-flex-shrink: 1;
   -webkit-flex-basis: 317px;
   flex-shrink: 1;
-  flex-basis: 317px; }
+  flex-basis: 317px;
+  min-width: 0; }
 
 .panel2 {
   -webkit-flex-shrink: 1;
   -webkit-flex-basis: 333px;
   flex-shrink: 1;
-  flex-basis: 333px; }
+  flex-basis: 333px;
+  min-width: 0; }
 
 .panel3 {
   -webkit-flex-shrink: 1;
   -webkit-flex-basis: 247px;
   flex-shrink: 1;
-  flex-basis: 247px; }
+  flex-basis: 247px;
+  min-width: 0; }
 
 .panelImage {
   margin: 0 0 -0.2em 0;
