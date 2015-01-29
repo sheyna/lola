@@ -1,4 +1,5 @@
 // requires getDiscount.js to work
+// var getDiscount = require('./getDiscount');
 
 function getInventory(category) {
   var xhr = new XMLHttpRequest();

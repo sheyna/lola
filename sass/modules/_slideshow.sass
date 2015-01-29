@@ -1,0 +1,43 @@
+.slider
+  max-width: 897px
+  margin: 1em auto 1em auto
+
+.slide-viewer
+  position: relative
+  overflow: hidden
+  height: 150px
+  @media only screen and (max-width: 850px)
+    height: 140px
+  @media only screen and (max-width: 650px)
+    height: 90px
+  @media only screen and (max-width: 450px)
+    height: 80px
+  .slide-group
+    width: 100%
+    height: 100%
+    position: relative
+    .slide
+      width: 100%
+      height: 100%
+      display: none;
+      position: absolute
+      &:first-child
+        display: block
+      img
+        width: 100%
+
+.slide-buttons
+  text-align: center
+
+.slide-btn
+  border: none
+  background: none
+  color: $color-body-text
+  font-size: 100%
+  line-height: 0.5em
+  margin-top: 0.2em
+
+.slide-btn.active,
+.slide-btn:hover
+  color: $color-quinary
+  cursor: pointer
