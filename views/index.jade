@@ -3,54 +3,65 @@ extends layout
 block content
 
   .main-content
-    header
-      a(href='/')
-        img.logo(src='images/lola_logo.svg', alt='Lola Logo')
-        h1.logoText=title
-      nav
-        h2(hidden='') Site Navigation
-        ul
-          li
-            a(href='shop') shop
-          li
-            a(href='specials') specials
-          li
-            a(href='#') about
-    .hero
-      .panel3
-        img.panelImage(src='images/lola3.jpg', alt='Love')
-      .panel2
-        img.panelImage(src='images/lola2.jpg', alt='Dance')
-      .panel1
-        img.panelImage(src='images/lola1.jpg', alt='Live')
-    section.plugs
-      aside.sidebox
-        h1
-          span.top 40%
-          | off when you
-          br
-          | buy 5 items
-      aside.sidebox
-        h1
-          span.top 20%
-          | off all
-          br
-          | accessories
-    section.plugs
-      section.box
-        img(src='images/plug-shoes.jpg', alt='Shoes')
-        p
-          | SHOES: Lorem ipsum dolor sit amet, consectetur adipiscing
-          | elit, sed do eiusmod tempor incididunt
-      section.box
-        img(src='images/plug-casual.jpg', alt='Casual')
-        p
-          | CASUAL: Lorem ipsum dolor sit amet, consectetur adipiscing
-          | elit, sed do eiusmod tempor incididunt
-      section.box
-        img(src='images/plug-dress.jpg', alt='Dress')
-        p
-          | DRESS: Lorem ipsum dolor sit amet, consectetur adipiscing
-          | elit, sed do eiusmod tempor incididunt
-    footer
-      p A project by Sheyna Watkins
+
+    block header
+
+      header
+        a(href='/')
+          img.logo(src='images/lola_logo.svg', alt='Lola Logo')
+          h1.logoText=title
+        nav
+          h2(hidden='') Site Navigation
+          ul
+            li
+              a(href='shop') shop
+            li
+              a(href='specials') specials
+            li
+              a(href='#') about
+
+    block body
+
+      .hero
+        .panel3
+          img.panelImage(src='images/lola3.jpg', alt='Love')
+        .panel2
+          img.panelImage(src='images/lola2.jpg', alt='Dance')
+        .panel1
+          img.panelImage(src='images/lola1.jpg', alt='Live')
+      section.plugs
+        aside.sidebox
+          h1
+            span.top 40%
+            | off when you
+            br
+            | buy 5 items
+        aside.sidebox
+          h1
+            span.top 20%
+            | off all
+            br
+            | accessories
+      section.plugs
+        section.box
+          img(src='images/plug-shoes.jpg', alt='Shoes')
+          p
+            | SHOES: Lorem ipsum dolor sit amet, consectetur adipiscing
+            | elit, sed do eiusmod tempor incididunt
+        section.box
+          img(src='images/plug-casual.jpg', alt='Casual')
+          p
+            | CASUAL: Lorem ipsum dolor sit amet, consectetur adipiscing
+            | elit, sed do eiusmod tempor incididunt
+        section.box
+          img(src='images/plug-dress.jpg', alt='Dress')
+          p
+            | DRESS: Lorem ipsum dolor sit amet, consectetur adipiscing
+            | elit, sed do eiusmod tempor incididunt
+
+    block footer
+
+      footer
+        p A project by Sheyna Watkins
+
+    block scripts

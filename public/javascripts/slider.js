@@ -12,7 +12,7 @@ $('.slider').each(function() {              // For every slider
     advance();                       // When slide moves, call advance() again
 
     // If it is the current slide / animating do nothing
-    if ($group.is(':animated') || currentIndex === newIndex) {  
+    if ($group.is(':animated') || currentIndex === newIndex) {
       return;
     }
 
@@ -30,14 +30,14 @@ $('.slider').each(function() {              // For every slider
     $slides.eq(newIndex).css( {left: slideLeft, display: 'block'} );
 
     $group.animate( {left: animateLeft}, function() {    // Animate slides and
-      $slides.eq(currentIndex).css( {display: 'none'} ); // Hide previous slide      
+      $slides.eq(currentIndex).css( {display: 'none'} ); // Hide previous slide
       $slides.eq(newIndex).css( {left: 0} ); // Set position of the new item
       $group.css( {left: 0} );               // Set position of group of slides
       currentIndex = newIndex;               // Set currentIndex to the new image
     });
   }
 
-  function advance() {                     // Used to set 
+  function advance() {                     // Used to set
     clearTimeout(timeout);                 // Clear previous timeout
     timeout = setTimeout(function() {      // Set new timer
       if (currentIndex < ($slides.length - 1)) { // If slide < total slides
@@ -45,7 +45,7 @@ $('.slider').each(function() {              // For every slider
       } else {                             // Otherwise
         move(0);                           // Move to the first slide
       }
-    }, 4000);                              // Milliseconds timer will wait
+    }, 8000);                              // Milliseconds timer will wait
   }
 
   $.each($slides, function(index) {

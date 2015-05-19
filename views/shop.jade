@@ -1,45 +1,32 @@
-extends layout
+extends index
 
-block content
+block body
 
-  .main-content
-    header
-      a(href='/')
-        img.logo(src='images/lola_logo.svg', alt='Lola Logo')
-        h1.logoText=title
-      nav
-        h2(hidden='') Site Navigation
-        ul
-          li
-            a(href='shop') shop
-          li
-            a(href='specials') specials
-          li
-            a(href='#') about
-    .slider
-      .slide-viewer
-        .slide-group
-          .slide.slide1
-            img.logo(src='images/slides/lola_slideshow_1.jpg', alt='Lola')
-          .slide.slide2
-            img.logo(src='images/slides/lola_slideshow_2.jpg', alt='Lola')
-          .slide.slide3
-            img.logo(src='images/slides/lola_slideshow_3.jpg', alt='Lola')
-      .slide-buttons
-    ul.shoplinks#menu
-      li#li-subhead Search Categories:
-      ul
-        li.sub-subhead#tops Tops
-        li.sub-subhead#dresses Dresses
-        li.sub-subhead#shorts Shorts
-        li.sub-subhead#pants Pants
-        li.sub-subhead#skirts Skirts
-        li.sub-subhead#accessories Accessories
-        li.sub-subhead#outerwear Outerwear
-        li.sub-subhead#shoes Shoes
-    section#inventory
-    footer
-      p A project by Sheyna Watkins
+  //- .slider
+  //-   .slide-viewer
+  //-     .slide-group
+  //-       .slide.slide1
+  //-         img.logo(src='images/slides/lola_slideshow_1.jpg', alt='Lola')
+  //-       .slide.slide2
+  //-         img.logo(src='images/slides/lola_slideshow_2.jpg', alt='Lola')
+  //-       .slide.slide3
+  //-         img.logo(src='images/slides/lola_slideshow_3.jpg', alt='Lola')
+  //-   .slide-buttons
+  ul.shoplinks#menu
+    li#li-subhead Search Categories:
+    ul
+      li.sub-subhead#tops Tops
+      li.sub-subhead#dresses Dresses
+      li.sub-subhead#shorts Shorts
+      li.sub-subhead#pants Pants
+      li.sub-subhead#skirts Skirts
+      li.sub-subhead#accessories Accessories
+      li.sub-subhead#outerwear Outerwear
+      li.sub-subhead#shoes Shoes
+  section#inventory
+
+block scripts
+
   script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
   //- script(src='http://code.jquery.com/ui/1.11.2/jquery-ui.js')
   script(src='javascripts/getDiscount.js')
