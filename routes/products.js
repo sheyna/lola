@@ -3,19 +3,19 @@ var router = express.Router();
 
 // original version:
 
-/* GET shop page. */
+/* GET products page. */
 // router.get('/', function(req, res) {
-//   res.render('shop', { title: 'Lola' });
+//   res.render('products', { title: 'Lola' });
 // });
 
-/* GET shop page. with Database version */
+/* GET products page. with Database version */
 router.get('/', function(req, res) {
     var db = req.db;
     var inventorylist = db.get('inventory');
     inventorylist.find({},{},function(e,docs){
-        res.render('shop', {
+        res.render('products', {
             title: 'Lola',
-            "shop" : docs
+            "products" : docs
         });
     });
 });

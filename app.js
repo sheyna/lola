@@ -5,11 +5,17 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+// MongoDB
+var mongo = require('mongodb');
+var monk = require('monk');
+var db = monk('localhost:27017/lola');
+
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var shop = require('./routes/shop');
 var specials = require('./routes/specials');
 var product = require('./routes/product');
+var products = require('./routes/products');
 
 var app = express();
 
@@ -25,11 +31,18 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Makes db accessible to the router
+app.use(function(req,res,next){
+    req.db = db;
+    next();
+});
+
 app.use('/', routes);
 app.use('/users', users);
 app.use('/shop', shop);
 app.use('/specials', specials);
 app.use('/product', product);
+app.use('/products', products);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
