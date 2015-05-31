@@ -11,6 +11,8 @@ function getInventory(category) {
       for (var i = 0; i < inventory.length; i++) {
         if (category == 'all' || inventory[i].itemClass == category || (category == 'specials' && inventory[i].special)) {
           statusHTML += '<section class="inventory-listing"><img src="' + inventory[i].imageURL + '" alt="' + inventory[i].itemTitle + '"><h1>' + inventory[i].itemTitle + '</h1><p>$';
+            // Checks if item is on special discount:
+            // (seting .toFixed(2) will set final number to only numbers after decimal point)
             if (inventory[i].special) {
               var priceCalc = getDiscount(inventory[i].itemPrice, inventory[i].discount);
               statusHTML += priceCalc + ' <span class="special">' + inventory[i].discount + '% OFF of $' + (inventory[i].itemPrice.toFixed(2)) + '</span> ';
