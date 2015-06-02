@@ -10,14 +10,14 @@ var router = express.Router();
 
 /* GET products page. with Database version */
 router.get('/', function(req, res) {
-    var db = req.db;
-    var inventorylist = db.get('inventory');
-    inventorylist.find({},{},function(e,docs){
-        res.render('products', {
-            title: 'Lola',
-            "products" : docs
-        });
+  var db = req.db;
+  var inventorylist = db.get('inventory');
+  inventorylist.find({},{},function(e,docs){
+    res.render('products', {
+      title: 'Lola',
+      "products" : docs
     });
+  });
 });
 
 module.exports = router;
