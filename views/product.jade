@@ -1,0 +1,12 @@
+extends index
+
+block body
+
+  section.inventory-listing
+    img(src='#{imageURL}', alt='#{itemTitle}')
+    h1 #{itemTitle}
+
+    if special
+      p.special #{discount}% off of $#{itemPrice}
+    else
+      p $#{itemPrice}

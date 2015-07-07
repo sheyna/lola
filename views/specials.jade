@@ -1,35 +1,6 @@
-extends layout
+extends shop
 
-block content
-
-  .main-content
-    header
-      a(href='/')
-        img.logo(src='images/lola_logo.svg', alt='Lola Logo')
-        h1.logoText=title
-      nav
-        h2(hidden='') Site Navigation
-        ul
-          li
-            a(href='shop') shop
-          li
-            a(href='specials') specials
-          li
-            a(href='#') about
-    ul.shoplinks
-      li#li-subhead Search Categories:
-      ul
-        li.sub-subhead#tops Tops
-        li.sub-subhead#dresses Dresses
-        li.sub-subhead#shorts Shorts
-        li.sub-subhead#pants Pants
-        li.sub-subhead#skirts Skirts
-        li.sub-subhead#accessories Accessories
-        li.sub-subhead#outerwear Outerwear
-        li.sub-subhead#shoes Shoes
-    section#inventory
-    footer
-      p A project by Sheyna Watkins
+block scripts
   script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
   script(src='javascripts/getDiscount.js')
   script(src='javascripts/getInventory.js')

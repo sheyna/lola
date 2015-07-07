@@ -84,23 +84,70 @@ h1 {
     .logoText {
       font-size: 4.5em; } }
 
-nav {
-  display: inline-block;
-  margin-top: 1em; }
-  nav ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 1.6em; }
-    @media only screen and (max-width: 450px) {
-      nav ul li {
+nav.header-nav {
+  display: none; }
+  @media only screen and (min-width: 450px) {
+    nav.header-nav {
+      display: inline-block;
+      margin-top: 1em; }
+      nav.header-nav ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 0 1.6em; } }
+    @media only screen and (min-width: 450px) and (max-width: 450px) {
+      nav.header-nav ul li {
         padding: 0 1em; } }
-  nav a {
-    color: #5d8780;
-    font-family: "latolight", sans-serif;
-    font-size: 1.5em;
-    text-decoration: none; }
-    nav a:hover {
-      color: #adc6c6; }
+  @media only screen and (min-width: 450px) {
+      nav.header-nav a {
+        color: #5d8780;
+        font-family: "latolight", sans-serif;
+        font-size: 1.5em;
+        text-decoration: none; }
+        nav.header-nav a:hover {
+          color: #adc6c6; } }
+
+nav.header-mobile {
+  display: block;
+  margin: 1em auto;
+  width: 100%;
+  /* Fallbacks */ }
+  @media only screen and (min-width: 450px) {
+    nav.header-mobile {
+      display: none; } }
+  nav.header-mobile ul {
+    position: relative;
+    font-weight: 900; }
+    nav.header-mobile ul .active {
+      background: #196F9A; }
+    nav.header-mobile ul li {
+      position: relative;
+      list-style: none;
+      cursor: pointer; }
+      nav.header-mobile ul li ul {
+        position: absolute;
+        left: 0;
+        right: 0; }
+      nav.header-mobile ul li a {
+        transition: background-color 0.2s ease-in-out;
+        -webkit-transition: background-color 0.2s ease-in-out;
+        -moz-transition: background-color 0.2s ease-in-out;
+        display: block;
+        padding: 8px 10px 8px 40px;
+        background: #FFF;
+        color: #333;
+        text-decoration: none; }
+        nav.header-mobile ul li a:hover {
+          background: #F2F2F2; }
+        nav.header-mobile ul li a .clicker {
+          position: relative;
+          background: #2284B5;
+          color: #FFF; }
+          nav.header-mobile ul li a .clicker:hover {
+            background: #196F9A; }
+  nav.header-mobile .no-js ul {
+    display: none; }
+  nav.header-mobile .no-js:hover ul {
+    display: block; }
 
 .main-content {
   max-width: 900px;

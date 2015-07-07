@@ -14,21 +14,96 @@
   @media only screen and (max-width: 450px)
     font-size: 4.5em
 
-nav
-  display: inline-block
-  margin-top: 1em
+nav.header-nav
+  display: none
+  @media only screen and (min-width: 450px)
+    display: inline-block
+    margin-top: 1em
+    ul
+      li
+        list-style: none
+        display: inline-block
+        padding: 0 1.6em
+        @media only screen and (max-width: 450px)
+          padding: 0 1em
+    a
+      color: $color-primary
+      font-family: $font-family--primary
+      font-size: 1.5em
+      text-decoration: none
+      &:hover
+        color: $color-tertiary
+
+// nav.header-mobile
+//   display: block
+//   ul.menu-label
+//     // float: right
+//     text-align: right
+//     position: absolute
+//     top: 3.5em
+//     right: 2em
+//   ul.menu-list
+//     li
+//       list-style: none
+//       position: relative
+//       display: block
+//       margin: 1em 0
+//       @media only screen and (max-width: 450px)
+//         padding: 0 1em
+//   a
+//     color: $color-primary
+//     font-family: $font-family--primary
+//     font-size: 1.5em
+//     text-decoration: none
+//     &:hover
+//       color: $color-tertiary
+//   @media only screen and (min-width: 450px)
+//     display: none
+//   /* Fallbacks */
+//   .no-js ul
+//     display: none
+//   .no-js:hover ul
+//     display: block
+
+nav.header-mobile
+  display: block
+  margin: 1em auto
+  width: 100%
+  @media only screen and (min-width: 450px)
+    display: none
   ul
+    position: relative
+    font-weight: 900
+    .active
+      background: #196F9A
     li
+      position: relative
       list-style: none
-      display: inline-block
-      padding: 0 1.6em
-      @media only screen and (max-width: 450px)
-        padding: 0 1em
-  a
-    color: $color-primary
-    font-family: $font-family--primary
-    font-size: 1.5em
-    text-decoration: none
-    &:hover
-      color: $color-tertiary
+      cursor: pointer
+      ul
+        position: absolute
+        left: 0
+        right: 0
+      a
+        transition: background-color 0.2s ease-in-out
+        -webkit-transition: background-color 0.2s ease-in-out
+        -moz-transition: background-color 0.2s ease-in-out
+        display: block
+        padding: 8px 10px 8px 40px
+        background: #FFF
+        color: #333
+        text-decoration: none
+        &:hover
+          background: #F2F2F2
+        .clicker
+          position: relative
+          background: #2284B5
+          color: #FFF
+          &:hover
+            background: #196F9A
+  /* Fallbacks */
+  .no-js ul
+    display: none
+  .no-js:hover ul
+    display: block
 
