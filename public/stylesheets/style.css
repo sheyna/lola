@@ -118,7 +118,20 @@ nav.header-mobile {
     position: relative;
     font-weight: 900; }
     nav.header-mobile ul .active {
-      background: #196F9A; }
+      background: #5d8780;
+      color: white; }
+      nav.header-mobile ul .active:hover {
+        color: #5d8780; }
+    nav.header-mobile ul .clicker {
+      color: #5d8780;
+      font-family: "latolight", sans-serif;
+      font-size: 1.5em;
+      padding: 0.6em 1.5em 1em 1.5em;
+      position: relative;
+      background: #F2F2F2; }
+      nav.header-mobile ul .clicker:hover {
+        background: #5d8780;
+        color: #FFF; }
     nav.header-mobile ul li {
       position: relative;
       list-style: none;
@@ -126,24 +139,23 @@ nav.header-mobile {
       nav.header-mobile ul li ul {
         position: absolute;
         left: 0;
-        right: 0; }
+        right: 0;
+        li: last-of-type a;
+        border-bottom: 1em solid #5d8780; }
       nav.header-mobile ul li a {
+        color: #5d8780;
+        font-family: "latolight", sans-serif;
+        font-size: 1em;
         transition: background-color 0.2s ease-in-out;
         -webkit-transition: background-color 0.2s ease-in-out;
         -moz-transition: background-color 0.2s ease-in-out;
         display: block;
-        padding: 8px 10px 8px 40px;
+        padding: 0.6em 1.5em;
+        border-bottom: 0.1em solid #b3cac6;
         background: #FFF;
-        color: #333;
         text-decoration: none; }
         nav.header-mobile ul li a:hover {
           background: #F2F2F2; }
-        nav.header-mobile ul li a .clicker {
-          position: relative;
-          background: #2284B5;
-          color: #FFF; }
-          nav.header-mobile ul li a .clicker:hover {
-            background: #196F9A; }
   nav.header-mobile .no-js ul {
     display: none; }
   nav.header-mobile .no-js:hover ul {

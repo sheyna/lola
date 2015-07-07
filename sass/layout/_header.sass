@@ -75,7 +75,20 @@ nav.header-mobile
     position: relative
     font-weight: 900
     .active
-      background: #196F9A
+      background: $color-primary
+      color: $color-default
+      &:hover
+        color: $color-primary
+    .clicker
+      color: $color-primary
+      font-family: $font-family--primary
+      font-size: 1.5em
+      padding: 0.6em 1.5em 1em 1.5em
+      position: relative
+      background: #F2F2F2 // gray
+      &:hover
+        background: $color-primary
+        color: #FFF
     li
       position: relative
       list-style: none
@@ -84,23 +97,22 @@ nav.header-mobile
         position: absolute
         left: 0
         right: 0
+        li:last-of-type a
+        border-bottom: 1em solid $color-primary
       a
+        color: $color-primary
+        font-family: $font-family--primary
+        font-size: 1em
         transition: background-color 0.2s ease-in-out
         -webkit-transition: background-color 0.2s ease-in-out
         -moz-transition: background-color 0.2s ease-in-out
         display: block
-        padding: 8px 10px 8px 40px
+        padding: 0.6em 1.5em
+        border-bottom: 0.1em solid $color-primary-2
         background: #FFF
-        color: #333
         text-decoration: none
         &:hover
-          background: #F2F2F2
-        .clicker
-          position: relative
-          background: #2284B5
-          color: #FFF
-          &:hover
-            background: #196F9A
+          background: #F2F2F2 // gray
   /* Fallbacks */
   .no-js ul
     display: none
