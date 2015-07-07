@@ -15,6 +15,7 @@ function getInventory(category) {
             // (seting .toFixed(2) will set final number to only numbers after decimal point)
             if (inventory[i].special) {
               var priceCalc = getDiscount(inventory[i].itemPrice, inventory[i].discount);
+              // var priceCalc = getDiscount.getDiscount(inventory[i].itemPrice, inventory[i].discount);
               statusHTML += priceCalc + ' <span class="special">' + inventory[i].discount + '% OFF of $' + (inventory[i].itemPrice.toFixed(2)) + '</span> ';
             } else {
               statusHTML += (inventory[i].itemPrice.toFixed(2));
