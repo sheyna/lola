@@ -35,3 +35,19 @@ $(function () {
     }
   });
 });
+
+$(function () {
+  $('.drop-down-menu > ul').toggleClass('no-js js');
+  $('.drop-down-menu .js ul').hide();
+  $('.drop-down-menu .js').click(function(e) {
+    $('.drop-down-menu .js ul').slideToggle(200);
+    $('.drop-down-menu--clicker').toggleClass('active');
+    e.stopPropagation();
+  });
+  $(document).click(function() {
+    if ($('.drop-down-menu .js ul').is(':visible')) {
+      $('.drop-down-menu .js ul', this).slideUp();
+      $('.drop-down-menu--clicker').removeClass('active');
+    }
+  });
+});

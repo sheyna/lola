@@ -34,44 +34,18 @@ nav.header-nav
       &:hover
         color: $color-tertiary
 
-// nav.header-mobile
-//   display: block
-//   ul.menu-label
-//     // float: right
-//     text-align: right
-//     position: absolute
-//     top: 3.5em
-//     right: 2em
-//   ul.menu-list
-//     li
-//       list-style: none
-//       position: relative
-//       display: block
-//       margin: 1em 0
-//       @media only screen and (max-width: 450px)
-//         padding: 0 1em
-//   a
-//     color: $color-primary
-//     font-family: $font-family--primary
-//     font-size: 1.5em
-//     text-decoration: none
-//     &:hover
-//       color: $color-tertiary
-//   @media only screen and (min-width: 450px)
-//     display: none
-//   /* Fallbacks */
-//   .no-js ul
-//     display: none
-//   .no-js:hover ul
-//     display: block
+nav.header-mobile
+  z-index: 99
 
+.drop-down-menu,
+.product-menu,
 nav.header-mobile
   display: block
+  position: relative
   margin: 1em auto
   width: 100%
-  @media only screen and (min-width: 450px)
-    display: none
-  ul
+  ul.menu-label
+    display: block
     position: relative
     font-weight: 900
     .active
@@ -79,6 +53,7 @@ nav.header-mobile
       color: $color-default
       &:hover
         color: $color-primary
+    .drop-down-menu--clicker,
     .clicker
       color: $color-primary
       font-family: $font-family--primary
@@ -93,31 +68,36 @@ nav.header-mobile
       position: relative
       list-style: none
       cursor: pointer
-      ul
+      ul.menu-list
         position: absolute
         margin-top: 1em
         left: 0
         right: 0
-        // li:last-of-type a
-        //   border-bottom: 1em solid $color-primary
+        li
+          font-family: $font-family--primary
+          font-size: 1em
+          transition: background-color 0.2s ease-in-out
+          -webkit-transition: background-color 0.2s ease-in-out
+          -moz-transition: background-color 0.2s ease-in-out
+          display: block
+          padding: 0.6em 1.5em
+          border-top: 0.1em solid $color-primary-2
+          background: $color-quinary
+          &:hover
+            background: #F2F2F2 // gray
+            color: $color-primary
+            a
+              color: $color-primary
       a
         color: $color-default
-        font-family: $font-family--primary
-        font-size: 1em
-        transition: background-color 0.2s ease-in-out
-        -webkit-transition: background-color 0.2s ease-in-out
-        -moz-transition: background-color 0.2s ease-in-out
-        display: block
-        padding: 0.6em 1.5em
-        border-top: 0.1em solid $color-primary-2
-        background: $color-quinary
         text-decoration: none
-        &:hover
-          background: #F2F2F2 // gray
-          color: $color-primary
   /* Fallbacks */
   .no-js ul
     display: none
   .no-js:hover ul
     display: block
+
+nav.header-mobile
+  @media only screen and (min-width: 450px)
+    display: none
 

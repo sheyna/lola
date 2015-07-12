@@ -1,27 +1,29 @@
 .shoplinks
-  margin: 1em 0
-  border-top: 0.1em solid $color-primary
-  border-bottom: 0.1em solid $color-primary
-  padding: 0.6em 0
-  // @media only screen and (max-width: 450px)
-  //   background-color: $color-quaternary
-  li
-    list-style: none
-    display: inline-block
-    padding: 0 1.6em 0 1.6em
-    color: $color-primary
-    font-family: $font-family--primary
-    font-size: 1em
-    text-decoration: none
-  ul > li
-    &:hover
-      color: $color-tertiary
-      cursor: pointer
-      // @media only screen and (max-width: 450px)
-      //   background-color: $color-quinary
-  #li-subhead
-    font-family: $font-family--bold
-    margin-bottom: 0.5em
-    &:hover
+  @media only screen and (min-width: 450px)
+    margin: 1em 0
+    border-top: 0.1em solid $color-primary
+    border-bottom: 0.1em solid $color-primary
+    padding: 0.6em 0
+    // @media only screen and (max-width: 450px)
+    //   background-color: $color-quaternary
+    li
+      list-style: none
+      display: inline-block
+      padding: 0 1.6em 0 1.6em
       color: $color-primary
-      cursor: default
+      font-family: $font-family--primary
+      font-size: 1em
+      text-decoration: none
+    ul > li
+      &:hover
+        color: $color-tertiary
+        cursor: pointer
+        // @media only screen and (max-width: 450px)
+        //   background-color: $color-quinary
+    #li-subhead
+      font-family: $font-family--bold
+      margin-bottom: 0.5em
+      &:hover
+        color: $color-primary
+        cursor: default
+
