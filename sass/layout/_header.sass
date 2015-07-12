@@ -85,9 +85,9 @@ nav.header-mobile
       font-size: 1.5em
       padding: 0.6em 1.5em 1em 1.5em
       position: relative
-      background: #F2F2F2 // gray
+      background: $color-quaternary
       &:hover
-        background: $color-primary
+        background: $color-quinary
         color: #FFF
     li
       position: relative
@@ -95,12 +95,13 @@ nav.header-mobile
       cursor: pointer
       ul
         position: absolute
+        margin-top: 1em
         left: 0
         right: 0
-        li:last-of-type a
-        border-bottom: 1em solid $color-primary
+        // li:last-of-type a
+        //   border-bottom: 1em solid $color-primary
       a
-        color: $color-primary
+        color: $color-default
         font-family: $font-family--primary
         font-size: 1em
         transition: background-color 0.2s ease-in-out
@@ -108,11 +109,12 @@ nav.header-mobile
         -moz-transition: background-color 0.2s ease-in-out
         display: block
         padding: 0.6em 1.5em
-        border-bottom: 0.1em solid $color-primary-2
-        background: #FFF
+        border-top: 0.1em solid $color-primary-2
+        background: $color-quinary
         text-decoration: none
         &:hover
           background: #F2F2F2 // gray
+          color: $color-primary
   /* Fallbacks */
   .no-js ul
     display: none
