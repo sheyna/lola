@@ -40,62 +40,63 @@ nav.header-mobile
 .drop-down-menu,
 .product-menu,
 nav.header-mobile
-  display: block
-  position: relative
-  margin: 1em auto
-  width: 100%
-  ul.menu-label
+  @media only screen and (max-width: 450px)
     display: block
     position: relative
-    font-weight: 900
-    .active
-      background: $color-primary
-      color: $color-default
-      &:hover
-        color: $color-primary
-    .drop-down-menu--clicker,
-    .clicker
-      color: $color-primary
-      font-family: $font-family--primary
-      font-size: 1.5em
-      padding: 0.6em 1.5em 1em 1.5em
+    margin: 1em auto
+    width: 100%
+    ul.menu-label
+      display: block
       position: relative
-      background: $color-quaternary
-      &:hover
-        background: $color-quinary
-        color: #FFF
-    li
-      position: relative
-      list-style: none
-      cursor: pointer
-      ul.menu-list
-        position: absolute
-        margin-top: 1em
-        left: 0
-        right: 0
-        li
-          font-family: $font-family--primary
-          font-size: 1em
-          transition: background-color 0.2s ease-in-out
-          -webkit-transition: background-color 0.2s ease-in-out
-          -moz-transition: background-color 0.2s ease-in-out
-          display: block
-          padding: 0.6em 1.5em
-          border-top: 0.1em solid $color-primary-2
-          background: $color-quinary
-          &:hover
-            background: #F2F2F2 // gray
-            color: $color-primary
-            a
-              color: $color-primary
-      a
+      font-weight: 900
+      .active
+        background: $color-primary
         color: $color-default
-        text-decoration: none
-  /* Fallbacks */
-  .no-js ul
-    display: none
-  .no-js:hover ul
-    display: block
+        &:hover
+          color: $color-primary
+      .drop-down-menu--clicker,
+      .clicker
+        color: $color-primary
+        font-family: $font-family--primary
+        font-size: 1.5em
+        padding: 0.6em 1.5em 1em 1.5em
+        position: relative
+        background: $color-quaternary
+        &:hover
+          background: $color-quinary
+          color: #FFF
+      li
+        position: relative
+        list-style: none
+        cursor: pointer
+        ul.menu-list
+          position: absolute
+          margin-top: 1em
+          left: 0
+          right: 0
+          li
+            font-family: $font-family--primary
+            font-size: 1em
+            transition: background-color 0.2s ease-in-out
+            -webkit-transition: background-color 0.2s ease-in-out
+            -moz-transition: background-color 0.2s ease-in-out
+            display: block
+            padding: 0.6em 1.5em
+            border-top: 0.1em solid $color-primary-2
+            background: $color-quinary
+            &:hover
+              background: #F2F2F2 // gray
+              color: $color-primary
+              a
+                color: $color-primary
+        a
+          color: $color-default
+          text-decoration: none
+    /* Fallbacks */
+    .no-js ul
+      display: none
+    .no-js:hover ul
+      display: block
 
 nav.header-mobile
   @media only screen and (min-width: 450px)

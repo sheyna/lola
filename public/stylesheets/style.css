@@ -109,96 +109,97 @@ nav.header-nav {
 nav.header-mobile {
   z-index: 99; }
 
-.drop-down-menu,
-.product-menu,
-nav.header-mobile {
-  display: block;
-  position: relative;
-  margin: 1em auto;
-  width: 100%;
-  /* Fallbacks */ }
-  .drop-down-menu ul.menu-label,
-  .product-menu ul.menu-label,
-  nav.header-mobile ul.menu-label {
+@media only screen and (max-width: 450px) {
+  .drop-down-menu,
+  .product-menu,
+  nav.header-mobile {
     display: block;
     position: relative;
-    font-weight: 900; }
-    .drop-down-menu ul.menu-label .active,
-    .product-menu ul.menu-label .active,
-    nav.header-mobile ul.menu-label .active {
-      background: #5d8780;
-      color: white; }
-      .drop-down-menu ul.menu-label .active:hover,
-      .product-menu ul.menu-label .active:hover,
-      nav.header-mobile ul.menu-label .active:hover {
-        color: #5d8780; }
-    .drop-down-menu ul.menu-label .drop-down-menu--clicker,
-    .drop-down-menu ul.menu-label .clicker,
-    .product-menu ul.menu-label .drop-down-menu--clicker,
-    .product-menu ul.menu-label .clicker,
-    nav.header-mobile ul.menu-label .drop-down-menu--clicker,
-    nav.header-mobile ul.menu-label .clicker {
-      color: #5d8780;
-      font-family: "latolight", sans-serif;
-      font-size: 1.5em;
-      padding: 0.6em 1.5em 1em 1.5em;
+    margin: 1em auto;
+    width: 100%;
+    /* Fallbacks */ }
+    .drop-down-menu ul.menu-label,
+    .product-menu ul.menu-label,
+    nav.header-mobile ul.menu-label {
+      display: block;
       position: relative;
-      background: #dadcdc; }
-      .drop-down-menu ul.menu-label .drop-down-menu--clicker:hover,
-      .drop-down-menu ul.menu-label .clicker:hover,
-      .product-menu ul.menu-label .drop-down-menu--clicker:hover,
-      .product-menu ul.menu-label .clicker:hover,
-      nav.header-mobile ul.menu-label .drop-down-menu--clicker:hover,
-      nav.header-mobile ul.menu-label .clicker:hover {
-        background: #76a19a;
-        color: #FFF; }
-    .drop-down-menu ul.menu-label li,
-    .product-menu ul.menu-label li,
-    nav.header-mobile ul.menu-label li {
-      position: relative;
-      list-style: none;
-      cursor: pointer; }
-      .drop-down-menu ul.menu-label li ul.menu-list,
-      .product-menu ul.menu-label li ul.menu-list,
-      nav.header-mobile ul.menu-label li ul.menu-list {
-        position: absolute;
-        margin-top: 1em;
-        left: 0;
-        right: 0; }
-        .drop-down-menu ul.menu-label li ul.menu-list li,
-        .product-menu ul.menu-label li ul.menu-list li,
-        nav.header-mobile ul.menu-label li ul.menu-list li {
-          font-family: "latolight", sans-serif;
-          font-size: 1em;
-          transition: background-color 0.2s ease-in-out;
-          -webkit-transition: background-color 0.2s ease-in-out;
-          -moz-transition: background-color 0.2s ease-in-out;
-          display: block;
-          padding: 0.6em 1.5em;
-          border-top: 0.1em solid #b3cac6;
-          background: #76a19a; }
-          .drop-down-menu ul.menu-label li ul.menu-list li:hover,
-          .product-menu ul.menu-label li ul.menu-list li:hover,
-          nav.header-mobile ul.menu-label li ul.menu-list li:hover {
-            background: #F2F2F2;
-            color: #5d8780; }
-            .drop-down-menu ul.menu-label li ul.menu-list li:hover a,
-            .product-menu ul.menu-label li ul.menu-list li:hover a,
-            nav.header-mobile ul.menu-label li ul.menu-list li:hover a {
+      font-weight: 900; }
+      .drop-down-menu ul.menu-label .active,
+      .product-menu ul.menu-label .active,
+      nav.header-mobile ul.menu-label .active {
+        background: #5d8780;
+        color: white; }
+        .drop-down-menu ul.menu-label .active:hover,
+        .product-menu ul.menu-label .active:hover,
+        nav.header-mobile ul.menu-label .active:hover {
+          color: #5d8780; }
+      .drop-down-menu ul.menu-label .drop-down-menu--clicker,
+      .drop-down-menu ul.menu-label .clicker,
+      .product-menu ul.menu-label .drop-down-menu--clicker,
+      .product-menu ul.menu-label .clicker,
+      nav.header-mobile ul.menu-label .drop-down-menu--clicker,
+      nav.header-mobile ul.menu-label .clicker {
+        color: #5d8780;
+        font-family: "latolight", sans-serif;
+        font-size: 1.5em;
+        padding: 0.6em 1.5em 1em 1.5em;
+        position: relative;
+        background: #dadcdc; }
+        .drop-down-menu ul.menu-label .drop-down-menu--clicker:hover,
+        .drop-down-menu ul.menu-label .clicker:hover,
+        .product-menu ul.menu-label .drop-down-menu--clicker:hover,
+        .product-menu ul.menu-label .clicker:hover,
+        nav.header-mobile ul.menu-label .drop-down-menu--clicker:hover,
+        nav.header-mobile ul.menu-label .clicker:hover {
+          background: #76a19a;
+          color: #FFF; }
+      .drop-down-menu ul.menu-label li,
+      .product-menu ul.menu-label li,
+      nav.header-mobile ul.menu-label li {
+        position: relative;
+        list-style: none;
+        cursor: pointer; }
+        .drop-down-menu ul.menu-label li ul.menu-list,
+        .product-menu ul.menu-label li ul.menu-list,
+        nav.header-mobile ul.menu-label li ul.menu-list {
+          position: absolute;
+          margin-top: 1em;
+          left: 0;
+          right: 0; }
+          .drop-down-menu ul.menu-label li ul.menu-list li,
+          .product-menu ul.menu-label li ul.menu-list li,
+          nav.header-mobile ul.menu-label li ul.menu-list li {
+            font-family: "latolight", sans-serif;
+            font-size: 1em;
+            transition: background-color 0.2s ease-in-out;
+            -webkit-transition: background-color 0.2s ease-in-out;
+            -moz-transition: background-color 0.2s ease-in-out;
+            display: block;
+            padding: 0.6em 1.5em;
+            border-top: 0.1em solid #b3cac6;
+            background: #76a19a; }
+            .drop-down-menu ul.menu-label li ul.menu-list li:hover,
+            .product-menu ul.menu-label li ul.menu-list li:hover,
+            nav.header-mobile ul.menu-label li ul.menu-list li:hover {
+              background: #F2F2F2;
               color: #5d8780; }
-      .drop-down-menu ul.menu-label li a,
-      .product-menu ul.menu-label li a,
-      nav.header-mobile ul.menu-label li a {
-        color: white;
-        text-decoration: none; }
-  .drop-down-menu .no-js ul,
-  .product-menu .no-js ul,
-  nav.header-mobile .no-js ul {
-    display: none; }
-  .drop-down-menu .no-js:hover ul,
-  .product-menu .no-js:hover ul,
-  nav.header-mobile .no-js:hover ul {
-    display: block; }
+              .drop-down-menu ul.menu-label li ul.menu-list li:hover a,
+              .product-menu ul.menu-label li ul.menu-list li:hover a,
+              nav.header-mobile ul.menu-label li ul.menu-list li:hover a {
+                color: #5d8780; }
+        .drop-down-menu ul.menu-label li a,
+        .product-menu ul.menu-label li a,
+        nav.header-mobile ul.menu-label li a {
+          color: white;
+          text-decoration: none; }
+    .drop-down-menu .no-js ul,
+    .product-menu .no-js ul,
+    nav.header-mobile .no-js ul {
+      display: none; }
+    .drop-down-menu .no-js:hover ul,
+    .product-menu .no-js:hover ul,
+    nav.header-mobile .no-js:hover ul {
+      display: block; } }
 
 @media only screen and (min-width: 450px) {
   nav.header-mobile {
