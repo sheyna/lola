@@ -2,47 +2,11 @@ extends index
 
 block body
 
-  //- .slider
-  //-   .slide-viewer
-  //-     .slide-group
-  //-       .slide.slide1
-  //-         img.logo(src='images/slides/lola_slideshow_1.jpg', alt='Lola')
-  //-       .slide.slide2
-  //-         img.logo(src='images/slides/lola_slideshow_2.jpg', alt='Lola')
-  //-       .slide.slide3
-  //-         img.logo(src='images/slides/lola_slideshow_3.jpg', alt='Lola')
-  //-   .slide-buttons
+  section.inventory-listing
+    img(src='#{imageURL}', alt='#{itemTitle}')
+    h1 #{itemTitle}
 
-  //- ul.shoplinks#menu
-  //-   li#li-subhead Search Categories:
-  //-   ul
-  //-     li.sub-subhead#tops Tops
-  //-     li.sub-subhead#dresses Dresses
-  //-     li.sub-subhead#shorts Shorts
-  //-     li.sub-subhead#pants Pants
-  //-     li.sub-subhead#skirts Skirts
-  //-     li.sub-subhead#accessories Accessories
-  //-     li.sub-subhead#outerwear Outerwear
-  //-     li.sub-subhead#shoes Shoes
-
-  section#inventory
-    each product, i in products
-      section.inventory-listing
-        img(src='#{product.imageURL}', alt='#{product.itemTitle}')
-        h1 #{product.itemTitle}
-
-        if product.special
-          p.special #{product.discount}% off of $#{product.itemPrice}
-        else
-          p $#{product.itemPrice}
-
-block scripts
-
-  script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
-  //- script(src='http://code.jquery.com/ui/1.11.2/jquery-ui.js')
-  script(src='javascripts/getDiscount.js')
-  //- script(src='javascripts/getInventory.js')
-  //- script(src='javascripts/loadShop.js')
-  //- script(src='javascripts/slider.js')
-  //- script(src='javascripts/dropDownMenu.js')
-
+    if special
+      p.special #{discount}% off of $#{itemPrice}
+    else
+      p $#{itemPrice}
