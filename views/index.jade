@@ -10,8 +10,8 @@ block content
         a(href='/')
           img.logo(src='images/lola_logo.svg', alt='Lola Logo')
           h1.logoText=title
-        nav
-          h2(hidden='') Site Navigation
+        nav.header-nav
+          h1(hidden='') Site Navigation
           ul
             li
               a(href='shop') shop
@@ -21,6 +21,19 @@ block content
               a(href='specials') specials
             li
               a(href='#') about
+        nav.header-mobile
+          h1(hidden='') Site Navigation
+          ul.menu-label
+            li.no-js.clicker Menu:
+              ul.menu-list
+                a(href='/')
+                  li home
+                a(href='shop')
+                  li shop
+                a(href='specials')
+                  li specials
+                a(href='#')
+                  li about
 
     block body
 
@@ -67,3 +80,6 @@ block content
         p A project by Sheyna Watkins
 
     block scripts
+
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
+    script(src='javascripts/dropDownMenu.js')

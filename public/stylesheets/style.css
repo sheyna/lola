@@ -1,7 +1,19 @@
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain) */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -10,7 +22,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
@@ -22,7 +35,8 @@ ol, ul {
 blockquote, q {
   quotes: none; }
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before, blockquote:after,
+q:before, q:after {
   content: '';
   content: none; }
 
@@ -32,23 +46,24 @@ table {
 
 @font-face {
   font-family: 'latolight';
-  src: url('../fonts/lato-light-webfont.eot');
-  src: url('../fonts/lato-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato-light-webfont.woff2') format('woff2'), url('../fonts/lato-light-webfont.woff') format('woff'), url('../fonts/lato-light-webfont.ttf') format('truetype'), url('../fonts/lato-light-webfont.svg#latolight') format('svg');
+  src: url("../fonts/lato-light-webfont.eot");
+  src: url("../fonts/lato-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-light-webfont.woff2") format("woff2"), url("../fonts/lato-light-webfont.woff") format("woff"), url("../fonts/lato-light-webfont.ttf") format("truetype"), url("../fonts/lato-light-webfont.svg#latolight") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'latoregular';
-  src: url('../fonts/lato-regular-webfont.eot');
-  src: url('../fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato-regular-webfont.woff2') format('woff2'), url('../fonts/lato-regular-webfont.woff') format('woff'), url('../fonts/lato-regular-webfont.ttf') format('truetype'), url('../fonts/lato-regular-webfont.svg#latoregular') format('svg');
+  src: url("../fonts/lato-regular-webfont.eot");
+  src: url("../fonts/lato-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-regular-webfont.woff2") format("woff2"), url("../fonts/lato-regular-webfont.woff") format("woff"), url("../fonts/lato-regular-webfont.ttf") format("truetype"), url("../fonts/lato-regular-webfont.svg#latoregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 body {
   background-color: #f8f0e1; }
 
-p, h1 {
-  font-family: 'latolight', sans-serif;
+p,
+h1 {
+  font-family: "latolight", sans-serif;
   color: #5d8780; }
 
 .logo {
@@ -60,7 +75,7 @@ p, h1 {
 
 .logoText {
   color: #5d8780;
-  font-family: 'latolight', sans-serif;
+  font-family: "latolight", sans-serif;
   font-size: 6em;
   display: inline-block;
   margin: 0 0 0 0.1em;
@@ -69,23 +84,126 @@ p, h1 {
     .logoText {
       font-size: 4.5em; } }
 
-nav {
-  display: inline-block;
-  margin-top: 1em; }
-  nav ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 1.6em; }
-    @media only screen and (max-width: 450px) {
-      nav ul li {
+nav.header-nav {
+  display: none; }
+  @media only screen and (min-width: 450px) {
+    nav.header-nav {
+      display: inline-block;
+      margin-top: 1em; }
+      nav.header-nav ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 0 1.6em; } }
+    @media only screen and (min-width: 450px) and (max-width: 450px) {
+      nav.header-nav ul li {
         padding: 0 1em; } }
-  nav a {
-    color: #5d8780;
-    font-family: 'latolight', sans-serif;
-    font-size: 1.5em;
-    text-decoration: none; }
-    nav a:hover {
-      color: #adc6c6; }
+  @media only screen and (min-width: 450px) {
+      nav.header-nav a {
+        color: #5d8780;
+        font-family: "latolight", sans-serif;
+        font-size: 1.5em;
+        text-decoration: none; }
+        nav.header-nav a:hover {
+          color: #adc6c6; } }
+
+nav.header-mobile {
+  z-index: 99; }
+
+@media only screen and (max-width: 450px) {
+  .drop-down-menu,
+  .product-menu,
+  nav.header-mobile {
+    display: block;
+    position: relative;
+    margin: 1em auto;
+    width: 100%;
+    /* Fallbacks */ }
+    .drop-down-menu ul.menu-label,
+    .product-menu ul.menu-label,
+    nav.header-mobile ul.menu-label {
+      display: block;
+      position: relative;
+      font-weight: 900; }
+      .drop-down-menu ul.menu-label .active,
+      .product-menu ul.menu-label .active,
+      nav.header-mobile ul.menu-label .active {
+        background: #5d8780;
+        color: white; }
+        .drop-down-menu ul.menu-label .active:hover,
+        .product-menu ul.menu-label .active:hover,
+        nav.header-mobile ul.menu-label .active:hover {
+          color: #5d8780; }
+      .drop-down-menu ul.menu-label .drop-down-menu--clicker,
+      .drop-down-menu ul.menu-label .clicker,
+      .product-menu ul.menu-label .drop-down-menu--clicker,
+      .product-menu ul.menu-label .clicker,
+      nav.header-mobile ul.menu-label .drop-down-menu--clicker,
+      nav.header-mobile ul.menu-label .clicker {
+        color: #5d8780;
+        font-family: "latolight", sans-serif;
+        font-size: 1.5em;
+        padding: 0.6em 1.5em 1em 1.5em;
+        position: relative;
+        background: #dadcdc; }
+        .drop-down-menu ul.menu-label .drop-down-menu--clicker:hover,
+        .drop-down-menu ul.menu-label .clicker:hover,
+        .product-menu ul.menu-label .drop-down-menu--clicker:hover,
+        .product-menu ul.menu-label .clicker:hover,
+        nav.header-mobile ul.menu-label .drop-down-menu--clicker:hover,
+        nav.header-mobile ul.menu-label .clicker:hover {
+          background: #76a19a;
+          color: #FFF; }
+      .drop-down-menu ul.menu-label li,
+      .product-menu ul.menu-label li,
+      nav.header-mobile ul.menu-label li {
+        position: relative;
+        list-style: none;
+        cursor: pointer; }
+        .drop-down-menu ul.menu-label li ul.menu-list,
+        .product-menu ul.menu-label li ul.menu-list,
+        nav.header-mobile ul.menu-label li ul.menu-list {
+          position: absolute;
+          margin-top: 1em;
+          left: 0;
+          right: 0; }
+          .drop-down-menu ul.menu-label li ul.menu-list li,
+          .product-menu ul.menu-label li ul.menu-list li,
+          nav.header-mobile ul.menu-label li ul.menu-list li {
+            font-family: "latolight", sans-serif;
+            font-size: 1em;
+            transition: background-color 0.2s ease-in-out;
+            -webkit-transition: background-color 0.2s ease-in-out;
+            -moz-transition: background-color 0.2s ease-in-out;
+            display: block;
+            padding: 0.6em 1.5em;
+            border-top: 0.1em solid #b3cac6;
+            background: #76a19a; }
+            .drop-down-menu ul.menu-label li ul.menu-list li:hover,
+            .product-menu ul.menu-label li ul.menu-list li:hover,
+            nav.header-mobile ul.menu-label li ul.menu-list li:hover {
+              background: #F2F2F2;
+              color: #5d8780; }
+              .drop-down-menu ul.menu-label li ul.menu-list li:hover a,
+              .product-menu ul.menu-label li ul.menu-list li:hover a,
+              nav.header-mobile ul.menu-label li ul.menu-list li:hover a {
+                color: #5d8780; }
+        .drop-down-menu ul.menu-label li a,
+        .product-menu ul.menu-label li a,
+        nav.header-mobile ul.menu-label li a {
+          color: white;
+          text-decoration: none; }
+    .drop-down-menu .no-js ul,
+    .product-menu .no-js ul,
+    nav.header-mobile .no-js ul {
+      display: none; }
+    .drop-down-menu .no-js:hover ul,
+    .product-menu .no-js:hover ul,
+    nav.header-mobile .no-js:hover ul {
+      display: block; } }
+
+@media only screen and (min-width: 450px) {
+  nav.header-mobile {
+    display: none; } }
 
 .main-content {
   max-width: 900px;
@@ -112,7 +230,7 @@ footer {
   margin: 1.5em auto 1.5em auto;
   clear: both;
   overflow: auto;
-  background-image: url('/images/lolapattern.jpg');
+  background-image: url("/images/lolapattern.jpg");
   background-size: contain;
   display: -webkit-flex;
   -webkit-flex-direction: row;
@@ -151,28 +269,29 @@ footer {
   .panelImage:hover {
     opacity: 0.1; }
 
-.shoplinks {
-  margin: 1em 0;
-  border-top: 0.1em solid #5d8780;
-  border-bottom: 0.1em solid #5d8780;
-  padding: 0.6em 0; }
-  .shoplinks li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 1.6em 0 1.6em;
-    color: #5d8780;
-    font-family: 'latolight', sans-serif;
-    font-size: 1em;
-    text-decoration: none; }
-  .shoplinks ul > li:hover {
-    color: #adc6c6;
-    cursor: pointer; }
-  .shoplinks #li-subhead {
-    font-family: 'latoregular';
-    margin-bottom: 0.5em; }
-    .shoplinks #li-subhead:hover {
+@media only screen and (min-width: 450px) {
+  .shoplinks {
+    margin: 1em 0;
+    border-top: 0.1em solid #5d8780;
+    border-bottom: 0.1em solid #5d8780;
+    padding: 0.6em 0; }
+    .shoplinks li {
+      list-style: none;
+      display: inline-block;
+      padding: 0 1.6em 0 1.6em;
       color: #5d8780;
-      cursor: default; }
+      font-family: "latolight", sans-serif;
+      font-size: 1em;
+      text-decoration: none; }
+    .shoplinks ul > li:hover {
+      color: #adc6c6;
+      cursor: pointer; }
+    .shoplinks #li-subhead {
+      font-family: "latoregular";
+      margin-bottom: 0.5em; }
+      .shoplinks #li-subhead:hover {
+        color: #5d8780;
+        cursor: default; } }
 
 .plugs {
   display: -webkit-flex;
@@ -266,10 +385,10 @@ footer {
   .inventory-listing h1 {
     margin: 0.2em 0 0.2em;
     font-size: 1em;
-    font-family: 'latoregular'; }
+    font-family: "latoregular"; }
   .inventory-listing .special {
     font-size: 0.8em;
-    font-family: 'latoregular';
+    font-family: "latoregular";
     color: #d86270; }
 
 .slider {
@@ -314,6 +433,7 @@ footer {
   line-height: 0.5em;
   margin-top: 0.2em; }
 
-.slide-btn.active, .slide-btn:hover {
+.slide-btn.active,
+.slide-btn:hover {
   color: #76a19a;
   cursor: pointer; }
